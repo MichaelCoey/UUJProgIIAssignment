@@ -1,7 +1,5 @@
 package concertbooking;
 
-import java.util.Arrays;
-import java.util.Date;
 
 /**
  *
@@ -40,14 +38,9 @@ public class Event {
     }
     
     /*Prices*/
-    public float[] getPrices()
-    {
-        float[] fltPrices = new float[3];
-        fltPrices[0] = (float)prices[0] / 100;
-        fltPrices[1] = (float)prices[1] / 100;
-        fltPrices[2] = (float)prices[2] / 100;
-        
-        return fltPrices;
+    public int[] getPrices()
+    {   
+        return prices;
     }
     
 }
