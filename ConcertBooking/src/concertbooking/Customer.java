@@ -1,3 +1,5 @@
+package concertbooking;
+
 public class Customer {
 
 	//Variables
