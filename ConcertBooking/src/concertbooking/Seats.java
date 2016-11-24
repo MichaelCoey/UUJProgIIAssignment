@@ -7,20 +7,20 @@ package concertbooking;
 
 /**
  *
- * @author graem
+ * @author george
  */
 public class Seats {
-
-    private boolean Booked = false;
-    private Customer() = new Customer();
     
-    public static void main(String[] args) {
+    private boolean Booked;
+    private Customer customer;
         
-        public Bookseat()
-        {
-            
-        }
+    public void Bookseat(Customer c) {
+        Booked = false;
+        customer = null;
+    }
+     
+    public abstract Unbook() {
         
-    }      
-}
+    }
+}      
 
