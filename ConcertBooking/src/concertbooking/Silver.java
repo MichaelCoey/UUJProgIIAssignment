@@ -10,15 +10,10 @@ package concertbooking;
  * @author graem
  */
 public class Silver extends Seat {
-<<<<<<< HEAD
-=======
     
-    private Boolean programme;
-    
-    private Boolean getProgramme()
+    public void unBook()
     {
-        return programme;
+        booked = false;
+        customer = null;
     }
->>>>>>> origin/master
-    
 }

@@ -11,4 +11,8 @@ package concertbooking;
  */
 public class Bronze extends Seat {
     
+    public void unBook()
+    {
+        return -1;
+    }
 }
