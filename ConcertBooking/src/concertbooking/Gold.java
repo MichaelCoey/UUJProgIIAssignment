@@ -9,7 +9,7 @@ package concertbooking;
  *
  * @author graem
  */
-public class Gold extends Seats{
+public class Gold extends Seat{
     
   private Boolean backStagePass;
     

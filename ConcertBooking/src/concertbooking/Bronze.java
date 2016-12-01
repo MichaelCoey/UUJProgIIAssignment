@@ -9,6 +9,6 @@ package concertbooking;
  *
  * @author graem
  */
-public class Bronze extends Seats {
+public class Bronze extends Seat {
     
 }

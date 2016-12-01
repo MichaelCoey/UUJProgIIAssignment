@@ -9,18 +9,21 @@ package concertbooking;
  *
  * @author george
  */
-public class Seats {
+public class Seat { 
     
-    private boolean Booked;
+    private boolean booked;
     private Customer customer;
-        
-    public void Bookseat(Customer c) {
-        Booked = false;
+    
+    public Seat() {
+        booked = false;
         customer = null;
     }
-     
-    public abstract Unbook() {
         
+    public void Bookseat(Customer c) {
+        booked = true;
+        customer = c;
     }
+     
+    public abstract Unbook();       
 }      
 
