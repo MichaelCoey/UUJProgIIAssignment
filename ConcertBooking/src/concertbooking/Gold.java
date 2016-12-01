@@ -33,9 +33,11 @@ public class Gold extends Seat{
         return backStagePass;
     }
     
-    public void unBook()
+    public int unBook()
     {
         booked = false;
         customer = null;
+        
+        return 0;
     }
 }

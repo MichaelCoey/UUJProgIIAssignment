@@ -11,9 +11,11 @@ package concertbooking;
  */
 public class Silver extends Seat {
     
-    public void unBook()
+    public int unBook()
     {
         booked = false;
         customer = null;
+        
+        return 0;
     }
 }

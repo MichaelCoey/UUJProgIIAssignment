@@ -24,6 +24,6 @@ public abstract class Seat {
         customer = c;
     }
      
-    public abstract void unBook();       
+    public abstract int unBook();       
 }      
 
