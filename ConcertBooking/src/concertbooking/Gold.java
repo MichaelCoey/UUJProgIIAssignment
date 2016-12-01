@@ -33,6 +33,7 @@ public class Gold extends Seat{
         return backStagePass;
     }
     
+    @Override
     public int unBook()
     {
         booked = false;

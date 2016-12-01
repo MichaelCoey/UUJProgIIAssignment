@@ -11,6 +11,7 @@ package concertbooking;
  */
 public class Silver extends Seat {
     
+    @Override
     public int unBook()
     {
         booked = false;
