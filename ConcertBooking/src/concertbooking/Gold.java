@@ -11,7 +11,7 @@ package concertbooking;
  */
 public class Gold extends Seats{
     
-  private Boolean backStagePass;
+    private Boolean backStagePass;
     
 
     private Boolean RandomDraw() 
