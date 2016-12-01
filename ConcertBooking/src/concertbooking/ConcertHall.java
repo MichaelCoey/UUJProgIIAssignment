@@ -7,8 +7,12 @@ package concertbooking;
 
     public class ConcertHall {
         
-        private Seat[][] seats = new Seat[9][10];
+        Seat[][] seats;
         
+        public ConcertHall()
+        {
+            seats = new Seat[9][10];
+        }
         
         public Seat getSeat(int x, int y)
         {

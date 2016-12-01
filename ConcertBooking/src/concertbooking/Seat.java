@@ -6,7 +6,7 @@ package concertbooking;
  */
 public abstract class Seat { 
     
-    protected boolean booked;
+    protected Boolean booked;
     protected Customer customer;
     
     public Seat() {
@@ -14,9 +14,19 @@ public abstract class Seat {
         customer = null;
     }
         
-    public void Bookseat(Customer c) {
+    public void bookSeat(Customer c) {
         booked = true;
         customer = c;
+    }
+    
+    public Boolean getBooked()
+    {
+        return booked;
+    }
+    
+    public Customer getCustomer()
+    {
+        return customer;
     }
      
     public abstract int unBook();       
