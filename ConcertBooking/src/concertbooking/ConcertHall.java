@@ -10,7 +10,7 @@ package concertbooking;
         private Seat[][] seats = new Seat[9][10];
         
         
-        public Seat findSeat(int x, int y)
+        public Seat getSeat(int x, int y)
         {
             return seats[x][y];
         }
