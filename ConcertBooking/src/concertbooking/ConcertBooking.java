@@ -31,8 +31,10 @@ public class ConcertBooking {
         seats[3][5] = new Bronze();
         seats[3][5].bookSeat(customer2);
         
+        seats[9][1] = new Silver();
         seats[9][1].bookSeat(customer3);
         
+        seats[6][4] = new Gold();
         seats[6][4].bookSeat(customer4);
         
         concertHall.seats = seats;
