@@ -67,13 +67,13 @@ package concertbooking;
         }
         
         //Return the number of Seats Sold
-        private int getNumberOfSeatsSold()
+        public int getNumberOfSeatsSold()
         {
             return soldCount;
         }
         
         //Find out the updated amount of Seats Sold
-        private void addSeats(int numSeats)
+        public void addSeats(int numSeats)
         {
             soldCount += numSeats;
         }   
@@ -87,7 +87,7 @@ package concertbooking;
         } 
         
         //Find out the updated amount of Seats Available
-        private void removeSeats(int numSeats)
+        public void removeSeats(int numSeats)
         {
             soldCount -= numSeats;
         } 
