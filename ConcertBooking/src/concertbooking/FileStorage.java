@@ -1,7 +1,5 @@
 package concertbooking;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
@@ -17,8 +15,8 @@ public class FileStorage {
     
     public void newEvent(Event event)
     {
-        String eventFile = "event.txt";
-        try(FileWriter writer = new FileWriter(eventFile);)
+        String fileName = "event.txt";
+        try(FileWriter writer = new FileWriter(fileName);)
         {
             writer.write(event.getTitle());
 
@@ -30,7 +28,9 @@ public class FileStorage {
             writer.write("\n" + prices[0]);
             writer.write("\n" + prices[1]);
             writer.write("\n" + prices[2]);
-        } catch (IOException ex) {
+        }
+        catch (IOException ex)
+        {
             Logger.getLogger(FileStorage.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
@@ -68,4 +68,60 @@ public class FileStorage {
                
         return event;
     }
+    
+    public void saveSeats(ConcertHall hall)
+    {
+        String fileName = "seats.txt";
+        try(FileWriter writer = new FileWriter(fileName);)
+        {
+            for(int i=0; i<9; i++)
+            {
+                for(int j=0; j<10; j++)
+                {
+                    //Retrieve current seat
+                    Seat seat = hall.getSeat(i,j);
+                    
+                    String line;
+                    //Retrieve customer owning seat
+                    
+                    if(seat.getBooked())
+                    {
+                        Customer customer = seat.getCustomer();
+                        line = "1,";
+                        line += customer.getName() + ",";
+                        line += customer.getPhone() + ",";
+                        line += customer.getEmail();
+                    }
+                    else
+                    {
+                        line = "0";
+                    }
+                    
+                    writer.write(line);
+                }
+            }
+        }
+        catch(IOException ex)
+        {
+            Logger.getLogger(FileStorage.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+    
+//    public ConcertHall loadSeats()
+//    {
+//        ConcertHall hall = new ConcertHall();
+//        String seatsFile = "seats.txt";
+//        
+//        try(Scanner input = new Scanner(new File(seatsFile)))
+//        {
+//            
+//        }
+//        catch(FileNotFoundException ex)
+//        {
+//            System.err.println("Error opening file.");
+//            System.exit(1);
+//        }
+//    }
+    
 }

@@ -14,9 +14,9 @@ public abstract class Seat {
         customer = null;
     }
         
-    public void bookSeat(Customer c) {
+    public void bookSeat(Customer newCustomer) {
         booked = true;
-        customer = c;
+        customer = newCustomer;
     }
     
     public Boolean getBooked()

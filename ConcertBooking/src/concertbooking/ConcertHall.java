@@ -6,11 +6,11 @@ package concertbooking;
         private Seat[][] seats;
         private int soldCount;
         private static final int TOTAL_SEATS = 90;
-        
-        //Set the Array Size to 9 rows and 10 columns and Seats sold to 0       
+            
         public ConcertHall()
         {
             seats = new Seat[9][10];
+            soldCount = 0;
             assignSeatingTiers();
             soldCount = calculateNumberOfSeatsSold();
         }
@@ -45,10 +45,20 @@ package concertbooking;
             }
         }
         
-        //To get the exact seat find its row and column value
+        //Returns seat at given position
         public Seat getSeat(int x, int y)
         {
             return seats[x][y];
+        }
+        
+        public void setSeat(int x, int y, Seat seat)
+        {
+            seats[x][y] = seat;
+        }
+        
+        public void bookSeat(int x, int y, Customer customer)
+        {
+            seats[x][y].bookSeat(customer);
         }
         
         //Find out how many Seats are Sold
@@ -72,7 +82,7 @@ package concertbooking;
             return soldCount;
         }
         
-        //Find out the updated amount of Seats Sold
+        //Update number of seats sold
         public void addSeats(int numSeats)
         {
             soldCount += numSeats;
@@ -86,7 +96,7 @@ package concertbooking;
             return availableCount;
         } 
         
-        //Find out the updated amount of Seats Available
+        //Update number of seats sold
         public void removeSeats(int numSeats)
         {
             soldCount -= numSeats;
