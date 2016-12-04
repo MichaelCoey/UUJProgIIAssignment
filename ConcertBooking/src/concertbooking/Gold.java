@@ -1,29 +1,22 @@
 package concertbooking;
 
-/**
- *
- * @author graem
- */
 public class Gold extends Seat{
     
     private Boolean backStagePass;
     
-
-    private Boolean RandomDraw() 
+    public Gold()
+    {
+        backStagePass = randomDraw();
+    }
+    
+    private Boolean randomDraw() 
     {
         int num = (int)(Math.random() * 10) + 1;
-        if (num == 1)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return num == 1;
     }
    
     
-    private Boolean getBackStagePass()
+    public Boolean getBackStagePass()
     {
         return backStagePass;
     }

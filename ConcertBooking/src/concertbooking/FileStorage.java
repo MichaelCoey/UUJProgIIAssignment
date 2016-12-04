@@ -90,11 +90,11 @@ public class FileStorage {
                         line = "1,";
                         line += customer.getName() + ",";
                         line += customer.getPhone() + ",";
-                        line += customer.getEmail();
+                        line += customer.getEmail() + "\n";
                     }
                     else
                     {
-                        line = "0";
+                        line = "0\n";
                     }
                     
                     writer.write(line);
@@ -108,20 +108,38 @@ public class FileStorage {
     }
     
     
-//    public ConcertHall loadSeats()
-//    {
-//        ConcertHall hall = new ConcertHall();
-//        String seatsFile = "seats.txt";
-//        
-//        try(Scanner input = new Scanner(new File(seatsFile)))
-//        {
-//            
-//        }
-//        catch(FileNotFoundException ex)
-//        {
-//            System.err.println("Error opening file.");
-//            System.exit(1);
-//        }
-//    }
+    public ConcertHall loadSeats()
+    {
+        ConcertHall hall = new ConcertHall();
+        String seatsFile = "seats.txt";
+        
+        try(Scanner input = new Scanner(new File(seatsFile)))
+        {
+            for(int i=0; i<9; i++)
+            {
+                for(int j=0; j<10; j++)
+                {
+                    String line = input.nextLine();
+                    if(line.startsWith("1"))
+                    {
+                        String[] seatAttributes = line.split(",");
+                        Customer customer =
+                                new Customer(seatAttributes[1],
+                                        seatAttributes[2],
+                                        seatAttributes[3]);
+                        hall.bookSeat(i, j, customer);
+                    }
+                }
+            }
+        }
+        catch(FileNotFoundException ex)
+        {
+            System.err.println("Error opening file.");
+            System.exit(1);
+        }
+        
+        
+        return hall;
+    }
     
 }
