@@ -1,5 +1,7 @@
 package concertbooking;
 
+import java.util.ArrayList;
+
     public class ConcertHall {
         
         //Concert Hall Atributes
@@ -100,5 +102,47 @@ package concertbooking;
         public void removeSeats(int numSeats)
         {
             soldCount -= numSeats;
-        } 
+        }
+        
+        //Search Method to find the Seat Numbers that are Booked
+        public Seat searchSeatNumber(String searchItem)
+        {
+            boolean found = false;
+            int rowNumber = 0;
+            
+            char[] array = { 'a', 'b', 'c', 'd', 'e', 'f','g', 'h', 'i' };
+            
+            while (!found && rowNumber < 9)
+            {
+                if (searchItem.toLowerCase().charAt(0) == array[rowNumber])
+                {
+                    found = true;
+                }
+                else
+                {
+                    rowNumber++;
+                }
+            }
+            int seatNumber = Integer.valueOf(searchItem.substring(1));
+            return seats[rowNumber][seatNumber];
+        }
+        
+         public ArrayList<Seat> searchByName(String customerName)
+        {
+             ArrayList<Seat> findseat = new ArrayList<Seat>();
+         for (int i = 0; i < 9; i++)
+         {
+                     for (int j = 0; j < 10; j++)  
+                     {
+                         Seat seat = getSeat(i, j);
+             Customer customer = seat.getCustomer();
+                         if (customerName.equals (customer.getName()))
+                                 {
+                                     findseat.add(seat); 
+                                 }
+                     }
+                     
+                 }
+                 return findseat;
+        }
 }
