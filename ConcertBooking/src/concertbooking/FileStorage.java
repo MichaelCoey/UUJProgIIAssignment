@@ -90,13 +90,27 @@ public class FileStorage {
                         line = "1,";
                         line += customer.getName() + ",";
                         line += customer.getPhone() + ",";
-                        line += customer.getEmail() + "\n";
+                        line += customer.getEmail();
                     }
                     else
                     {
-                        line = "0\n";
+                        line = "0";
                     }
                     
+                    
+                    if(seat instanceof Gold)
+                    {
+                        if(((Gold) seat).getBackStagePass())
+                        {
+                            line += "1";
+                        }
+                        else
+                        {
+                            line += "0";
+                        }
+                    }
+                    
+                    line += "\n";
                     writer.write(line);
                 }
             }
@@ -120,14 +134,26 @@ public class FileStorage {
                 for(int j=0; j<10; j++)
                 {
                     String line = input.nextLine();
+                    String[] seatAttributes = line.split(",");
                     if(line.startsWith("1"))
                     {
-                        String[] seatAttributes = line.split(",");
                         Customer customer =
                                 new Customer(seatAttributes[1],
                                         seatAttributes[2],
                                         seatAttributes[3]);
                         hall.bookSeat(i, j, customer);
+                        Seat seat = hall.getSeat(i, j);
+                        if(seat instanceof Gold)
+                        {
+                            if(seatAttributes[4].equals("1"))
+                            {
+                                ((Gold) seat).setBackStagePass(true);
+                            }
+                            else
+                            {
+                                ((Gold) seat).setBackStagePass(false);
+                            }
+                        }
                     }
                 }
             }

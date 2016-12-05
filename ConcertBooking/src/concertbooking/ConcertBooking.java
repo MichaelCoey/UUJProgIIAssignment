@@ -25,18 +25,18 @@ public class ConcertBooking {
 //        concertHall.bookSeat(3, 5, customer2);
 //        concertHall.bookSeat(8, 1, customer3);
 //        concertHall.bookSeat(8, 4, customer4);
-//
-//        //seats[0][0].bookSeat(customer1);
-//
-//        //seats[3][5].bookSeat(customer2);
-//
-//        //seats[8][1].bookSeat(customer3);
-//
-//        //seats[8][4].bookSeat(customer4);
-//
-//        //concertHall.setSeats(seats);
-//
-//        fileStorage.saveSeats(concertHall);
+
+        //seats[0][0].bookSeat(customer1);
+
+        //seats[3][5].bookSeat(customer2);
+
+        //seats[8][1].bookSeat(customer3);
+
+        //seats[8][4].bookSeat(customer4);
+
+        //concertHall.setSeats(seats);
+
+        //fileStorage.saveSeats(concertHall);
         
         
         FileStorage fileStorage = new FileStorage();
@@ -58,6 +58,11 @@ public class ConcertBooking {
                 else
                 {
                     output += ": Not Booked ";
+                }
+                
+                if(seat instanceof Gold)
+                {
+                    output+= "BackStage Pass Winner";
                 }
                 System.out.println(output);
             }

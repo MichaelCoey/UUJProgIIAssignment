@@ -21,6 +21,11 @@ public class Gold extends Seat{
         return backStagePass;
     }
     
+    public void setBackStagePass(Boolean backStageFromFile)
+    {
+        backStagePass = backStageFromFile;
+    }
+    
     @Override
     public int unBook()
     {
