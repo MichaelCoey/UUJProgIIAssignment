@@ -1,7 +1,10 @@
 package concertbooking;
 
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.text.DecimalFormat;
+import java.util.ArrayList;
 import javax.swing.BoxLayout;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -19,10 +22,13 @@ public class GUI extends javax.swing.JFrame {
      */
     
     private ConcertHall hall = new ConcertHall();
+    private ArrayList<String> selectedSeats = new ArrayList<String>();
     
     public GUI() {
         initComponents();
-        
+        setActionCommands();
+        displaySoldStatus();
+        displayPrices();
     }
 
     /**
@@ -158,6 +164,16 @@ public class GUI extends javax.swing.JFrame {
         lblControlPanel = new javax.swing.JLabel();
         dSearchResults = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
+        dSeatBooked = new javax.swing.JLabel();
+        seatBooked = new javax.swing.JLabel();
+        dCustomerDetails = new javax.swing.JLabel();
+        dSeatDetails = new javax.swing.JLabel();
+        dCustomerName = new javax.swing.JLabel();
+        customerName = new javax.swing.JLabel();
+        dCustomerPhone = new javax.swing.JLabel();
+        customerPhone = new javax.swing.JLabel();
+        dCustomerEmail = new javax.swing.JLabel();
+        customerEmail = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         dSeatsSold = new javax.swing.JLabel();
         seatsSold = new javax.swing.JLabel();
@@ -188,273 +204,723 @@ public class GUI extends javax.swing.JFrame {
         seatA1.setBackground(new java.awt.Color(255, 204, 0));
         seatA1.setForeground(new java.awt.Color(255, 255, 255));
         seatA1.setToolTipText("");
+        seatA1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatA1ActionPerformed(evt);
+            }
+        });
 
         seatA2.setBackground(new java.awt.Color(255, 204, 0));
         seatA2.setForeground(new java.awt.Color(255, 255, 255));
+        seatA2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatA2ActionPerformed(evt);
+            }
+        });
 
         seatA3.setBackground(new java.awt.Color(255, 204, 0));
         seatA3.setForeground(new java.awt.Color(255, 255, 255));
+        seatA3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatA3ActionPerformed(evt);
+            }
+        });
 
         seatA4.setBackground(new java.awt.Color(255, 204, 0));
         seatA4.setForeground(new java.awt.Color(255, 255, 255));
+        seatA4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatA4ActionPerformed(evt);
+            }
+        });
 
         seatA5.setBackground(new java.awt.Color(255, 204, 0));
         seatA5.setForeground(new java.awt.Color(255, 255, 255));
+        seatA5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatA5ActionPerformed(evt);
+            }
+        });
 
         seatA6.setBackground(new java.awt.Color(255, 204, 0));
         seatA6.setForeground(new java.awt.Color(255, 255, 255));
+        seatA6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatA6ActionPerformed(evt);
+            }
+        });
 
         seatA7.setBackground(new java.awt.Color(255, 204, 0));
         seatA7.setForeground(new java.awt.Color(255, 255, 255));
+        seatA7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatA7ActionPerformed(evt);
+            }
+        });
 
         seatA8.setBackground(new java.awt.Color(255, 204, 0));
         seatA8.setForeground(new java.awt.Color(255, 255, 255));
+        seatA8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatA8ActionPerformed(evt);
+            }
+        });
 
         seatA9.setBackground(new java.awt.Color(255, 204, 0));
         seatA9.setForeground(new java.awt.Color(255, 255, 255));
+        seatA9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatA9ActionPerformed(evt);
+            }
+        });
 
         seatA10.setBackground(new java.awt.Color(255, 204, 0));
         seatA10.setForeground(new java.awt.Color(255, 255, 255));
+        seatA10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatA10ActionPerformed(evt);
+            }
+        });
 
         seatB1.setBackground(new java.awt.Color(255, 204, 0));
         seatB1.setForeground(new java.awt.Color(255, 255, 255));
+        seatB1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatB1ActionPerformed(evt);
+            }
+        });
 
         seatB2.setBackground(new java.awt.Color(255, 204, 0));
         seatB2.setForeground(new java.awt.Color(255, 255, 255));
+        seatB2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatB2ActionPerformed(evt);
+            }
+        });
 
         seatB3.setBackground(new java.awt.Color(255, 204, 0));
         seatB3.setForeground(new java.awt.Color(255, 255, 255));
+        seatB3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatB3ActionPerformed(evt);
+            }
+        });
 
         seatB4.setBackground(new java.awt.Color(255, 204, 0));
         seatB4.setForeground(new java.awt.Color(255, 255, 255));
+        seatB4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatB4ActionPerformed(evt);
+            }
+        });
 
         seatB5.setBackground(new java.awt.Color(255, 204, 0));
         seatB5.setForeground(new java.awt.Color(255, 255, 255));
+        seatB5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatB5ActionPerformed(evt);
+            }
+        });
 
         seatB6.setBackground(new java.awt.Color(255, 204, 0));
         seatB6.setForeground(new java.awt.Color(255, 255, 255));
+        seatB6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatB6ActionPerformed(evt);
+            }
+        });
 
         seatB7.setBackground(new java.awt.Color(255, 204, 0));
         seatB7.setForeground(new java.awt.Color(255, 255, 255));
+        seatB7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatB7ActionPerformed(evt);
+            }
+        });
 
         seatB8.setBackground(new java.awt.Color(255, 204, 0));
         seatB8.setForeground(new java.awt.Color(255, 255, 255));
+        seatB8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatB8ActionPerformed(evt);
+            }
+        });
 
         seatB9.setBackground(new java.awt.Color(255, 204, 0));
         seatB9.setForeground(new java.awt.Color(255, 255, 255));
+        seatB9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatB9ActionPerformed(evt);
+            }
+        });
 
         seatB10.setBackground(new java.awt.Color(255, 204, 0));
         seatB10.setForeground(new java.awt.Color(255, 255, 255));
+        seatB10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatB10ActionPerformed(evt);
+            }
+        });
 
         seatC1.setBackground(new java.awt.Color(255, 204, 0));
         seatC1.setForeground(new java.awt.Color(255, 255, 255));
+        seatC1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatC1ActionPerformed(evt);
+            }
+        });
 
         seatC2.setBackground(new java.awt.Color(255, 204, 0));
         seatC2.setForeground(new java.awt.Color(255, 255, 255));
+        seatC2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatC2ActionPerformed(evt);
+            }
+        });
 
         seatC3.setBackground(new java.awt.Color(255, 204, 0));
         seatC3.setForeground(new java.awt.Color(255, 255, 255));
+        seatC3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatC3ActionPerformed(evt);
+            }
+        });
 
         seatC4.setBackground(new java.awt.Color(255, 204, 0));
         seatC4.setForeground(new java.awt.Color(255, 255, 255));
+        seatC4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatC4ActionPerformed(evt);
+            }
+        });
 
         seatC5.setBackground(new java.awt.Color(255, 204, 0));
         seatC5.setForeground(new java.awt.Color(255, 255, 255));
+        seatC5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatC5ActionPerformed(evt);
+            }
+        });
 
         seatC6.setBackground(new java.awt.Color(255, 204, 0));
         seatC6.setForeground(new java.awt.Color(255, 255, 255));
+        seatC6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatC6ActionPerformed(evt);
+            }
+        });
 
         seatC7.setBackground(new java.awt.Color(255, 204, 0));
         seatC7.setForeground(new java.awt.Color(255, 255, 255));
+        seatC7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatC7ActionPerformed(evt);
+            }
+        });
 
         seatC8.setBackground(new java.awt.Color(255, 204, 0));
         seatC8.setForeground(new java.awt.Color(255, 255, 255));
+        seatC8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatC8ActionPerformed(evt);
+            }
+        });
 
         seatC9.setBackground(new java.awt.Color(255, 204, 0));
         seatC9.setForeground(new java.awt.Color(255, 255, 255));
+        seatC9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatC9ActionPerformed(evt);
+            }
+        });
 
         seatC10.setBackground(new java.awt.Color(255, 204, 0));
         seatC10.setForeground(new java.awt.Color(255, 255, 255));
+        seatC10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatC10ActionPerformed(evt);
+            }
+        });
 
         seatD1.setBackground(new java.awt.Color(204, 204, 204));
         seatD1.setForeground(new java.awt.Color(255, 255, 255));
+        seatD1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatD1ActionPerformed(evt);
+            }
+        });
 
         seatD2.setBackground(new java.awt.Color(204, 204, 204));
         seatD2.setForeground(new java.awt.Color(255, 255, 255));
+        seatD2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatD2ActionPerformed(evt);
+            }
+        });
 
         seatD3.setBackground(new java.awt.Color(204, 204, 204));
         seatD3.setForeground(new java.awt.Color(255, 255, 255));
+        seatD3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatD3ActionPerformed(evt);
+            }
+        });
 
         seatD4.setBackground(new java.awt.Color(204, 204, 204));
         seatD4.setForeground(new java.awt.Color(255, 255, 255));
+        seatD4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatD4ActionPerformed(evt);
+            }
+        });
 
         seatD5.setBackground(new java.awt.Color(204, 204, 204));
         seatD5.setForeground(new java.awt.Color(255, 255, 255));
+        seatD5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatD5ActionPerformed(evt);
+            }
+        });
 
         seatD6.setBackground(new java.awt.Color(204, 204, 204));
         seatD6.setForeground(new java.awt.Color(255, 255, 255));
+        seatD6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatD6ActionPerformed(evt);
+            }
+        });
 
         seatD7.setBackground(new java.awt.Color(204, 204, 204));
         seatD7.setForeground(new java.awt.Color(255, 255, 255));
+        seatD7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatD7ActionPerformed(evt);
+            }
+        });
 
         seatD8.setBackground(new java.awt.Color(204, 204, 204));
         seatD8.setForeground(new java.awt.Color(255, 255, 255));
+        seatD8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatD8ActionPerformed(evt);
+            }
+        });
 
         seatD9.setBackground(new java.awt.Color(204, 204, 204));
         seatD9.setForeground(new java.awt.Color(255, 255, 255));
+        seatD9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatD9ActionPerformed(evt);
+            }
+        });
 
         seatD10.setBackground(new java.awt.Color(204, 204, 204));
         seatD10.setForeground(new java.awt.Color(255, 255, 255));
+        seatD10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatD10ActionPerformed(evt);
+            }
+        });
 
         seatE1.setBackground(new java.awt.Color(204, 204, 204));
         seatE1.setForeground(new java.awt.Color(255, 255, 255));
+        seatE1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatE1ActionPerformed(evt);
+            }
+        });
 
         seatE2.setBackground(new java.awt.Color(204, 204, 204));
         seatE2.setForeground(new java.awt.Color(255, 255, 255));
+        seatE2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatE2ActionPerformed(evt);
+            }
+        });
 
         seatE3.setBackground(new java.awt.Color(204, 204, 204));
         seatE3.setForeground(new java.awt.Color(255, 255, 255));
+        seatE3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatE3ActionPerformed(evt);
+            }
+        });
 
         seatE4.setBackground(new java.awt.Color(204, 204, 204));
         seatE4.setForeground(new java.awt.Color(255, 255, 255));
+        seatE4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatE4ActionPerformed(evt);
+            }
+        });
 
         seatE5.setBackground(new java.awt.Color(204, 204, 204));
         seatE5.setForeground(new java.awt.Color(255, 255, 255));
+        seatE5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatE5ActionPerformed(evt);
+            }
+        });
 
         seatE6.setBackground(new java.awt.Color(204, 204, 204));
         seatE6.setForeground(new java.awt.Color(255, 255, 255));
+        seatE6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatE6ActionPerformed(evt);
+            }
+        });
 
         seatE7.setBackground(new java.awt.Color(204, 204, 204));
         seatE7.setForeground(new java.awt.Color(255, 255, 255));
+        seatE7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatE7ActionPerformed(evt);
+            }
+        });
 
         seatE8.setBackground(new java.awt.Color(204, 204, 204));
         seatE8.setForeground(new java.awt.Color(255, 255, 255));
+        seatE8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatE8ActionPerformed(evt);
+            }
+        });
 
         seatE9.setBackground(new java.awt.Color(204, 204, 204));
         seatE9.setForeground(new java.awt.Color(255, 255, 255));
+        seatE9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatE9ActionPerformed(evt);
+            }
+        });
 
         seatE10.setBackground(new java.awt.Color(204, 204, 204));
         seatE10.setForeground(new java.awt.Color(255, 255, 255));
+        seatE10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatE10ActionPerformed(evt);
+            }
+        });
 
         seatF1.setBackground(new java.awt.Color(204, 204, 204));
         seatF1.setForeground(new java.awt.Color(255, 255, 255));
+        seatF1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatF1ActionPerformed(evt);
+            }
+        });
 
         seatF2.setBackground(new java.awt.Color(204, 204, 204));
         seatF2.setForeground(new java.awt.Color(255, 255, 255));
+        seatF2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatF2ActionPerformed(evt);
+            }
+        });
 
         seatF3.setBackground(new java.awt.Color(204, 204, 204));
         seatF3.setForeground(new java.awt.Color(255, 255, 255));
+        seatF3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatF3ActionPerformed(evt);
+            }
+        });
 
         seatF4.setBackground(new java.awt.Color(204, 204, 204));
         seatF4.setForeground(new java.awt.Color(255, 255, 255));
+        seatF4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatF4ActionPerformed(evt);
+            }
+        });
 
         seatF5.setBackground(new java.awt.Color(204, 204, 204));
         seatF5.setForeground(new java.awt.Color(255, 255, 255));
+        seatF5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatF5ActionPerformed(evt);
+            }
+        });
 
         seatF6.setBackground(new java.awt.Color(204, 204, 204));
         seatF6.setForeground(new java.awt.Color(255, 255, 255));
+        seatF6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatF6ActionPerformed(evt);
+            }
+        });
 
         seatF7.setBackground(new java.awt.Color(204, 204, 204));
         seatF7.setForeground(new java.awt.Color(255, 255, 255));
+        seatF7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatF7ActionPerformed(evt);
+            }
+        });
 
         seatF8.setBackground(new java.awt.Color(204, 204, 204));
         seatF8.setForeground(new java.awt.Color(255, 255, 255));
+        seatF8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatF8ActionPerformed(evt);
+            }
+        });
 
         seatF9.setBackground(new java.awt.Color(204, 204, 204));
         seatF9.setForeground(new java.awt.Color(255, 255, 255));
+        seatF9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatF9ActionPerformed(evt);
+            }
+        });
 
         seatF10.setBackground(new java.awt.Color(204, 204, 204));
         seatF10.setForeground(new java.awt.Color(255, 255, 255));
+        seatF10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatF10ActionPerformed(evt);
+            }
+        });
 
         seatG1.setBackground(new java.awt.Color(204, 102, 0));
         seatG1.setForeground(new java.awt.Color(255, 255, 255));
+        seatG1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatG1ActionPerformed(evt);
+            }
+        });
 
         seatG2.setBackground(new java.awt.Color(204, 102, 0));
         seatG2.setForeground(new java.awt.Color(255, 255, 255));
+        seatG2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatG2ActionPerformed(evt);
+            }
+        });
 
         seatG3.setBackground(new java.awt.Color(204, 102, 0));
         seatG3.setForeground(new java.awt.Color(255, 255, 255));
+        seatG3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatG3ActionPerformed(evt);
+            }
+        });
 
         seatG4.setBackground(new java.awt.Color(204, 102, 0));
         seatG4.setForeground(new java.awt.Color(255, 255, 255));
+        seatG4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatG4ActionPerformed(evt);
+            }
+        });
 
         seatG5.setBackground(new java.awt.Color(204, 102, 0));
         seatG5.setForeground(new java.awt.Color(255, 255, 255));
+        seatG5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatG5ActionPerformed(evt);
+            }
+        });
 
         seatG6.setBackground(new java.awt.Color(204, 102, 0));
         seatG6.setForeground(new java.awt.Color(255, 255, 255));
+        seatG6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatG6ActionPerformed(evt);
+            }
+        });
 
         seatG7.setBackground(new java.awt.Color(204, 102, 0));
         seatG7.setForeground(new java.awt.Color(255, 255, 255));
+        seatG7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatG7ActionPerformed(evt);
+            }
+        });
 
         seatG8.setBackground(new java.awt.Color(204, 102, 0));
         seatG8.setForeground(new java.awt.Color(255, 255, 255));
+        seatG8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatG8ActionPerformed(evt);
+            }
+        });
 
         seatG9.setBackground(new java.awt.Color(204, 102, 0));
         seatG9.setForeground(new java.awt.Color(255, 255, 255));
+        seatG9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatG9ActionPerformed(evt);
+            }
+        });
 
         seatG10.setBackground(new java.awt.Color(204, 102, 0));
         seatG10.setForeground(new java.awt.Color(255, 255, 255));
+        seatG10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatG10ActionPerformed(evt);
+            }
+        });
 
         seatH1.setBackground(new java.awt.Color(204, 102, 0));
         seatH1.setForeground(new java.awt.Color(255, 255, 255));
+        seatH1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatH1ActionPerformed(evt);
+            }
+        });
 
         seatH2.setBackground(new java.awt.Color(204, 102, 0));
         seatH2.setForeground(new java.awt.Color(255, 255, 255));
+        seatH2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatH2ActionPerformed(evt);
+            }
+        });
 
         seatH3.setBackground(new java.awt.Color(204, 102, 0));
         seatH3.setForeground(new java.awt.Color(255, 255, 255));
+        seatH3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatH3ActionPerformed(evt);
+            }
+        });
 
         seatH4.setBackground(new java.awt.Color(204, 102, 0));
         seatH4.setForeground(new java.awt.Color(255, 255, 255));
+        seatH4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatH4ActionPerformed(evt);
+            }
+        });
 
         seatH5.setBackground(new java.awt.Color(204, 102, 0));
         seatH5.setForeground(new java.awt.Color(255, 255, 255));
+        seatH5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatH5ActionPerformed(evt);
+            }
+        });
 
         seatH6.setBackground(new java.awt.Color(204, 102, 0));
         seatH6.setForeground(new java.awt.Color(255, 255, 255));
+        seatH6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatH6ActionPerformed(evt);
+            }
+        });
 
         seatH7.setBackground(new java.awt.Color(204, 102, 0));
         seatH7.setForeground(new java.awt.Color(255, 255, 255));
+        seatH7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatH7ActionPerformed(evt);
+            }
+        });
 
         seatH8.setBackground(new java.awt.Color(204, 102, 0));
         seatH8.setForeground(new java.awt.Color(255, 255, 255));
+        seatH8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatH8ActionPerformed(evt);
+            }
+        });
 
         seatH9.setBackground(new java.awt.Color(204, 102, 0));
         seatH9.setForeground(new java.awt.Color(255, 255, 255));
+        seatH9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatH9ActionPerformed(evt);
+            }
+        });
 
         seatH10.setBackground(new java.awt.Color(204, 102, 0));
         seatH10.setForeground(new java.awt.Color(255, 255, 255));
+        seatH10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatH10ActionPerformed(evt);
+            }
+        });
 
         seatI1.setBackground(new java.awt.Color(204, 102, 0));
         seatI1.setForeground(new java.awt.Color(255, 255, 255));
+        seatI1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatI1ActionPerformed(evt);
+            }
+        });
 
         seatI2.setBackground(new java.awt.Color(204, 102, 0));
         seatI2.setForeground(new java.awt.Color(255, 255, 255));
+        seatI2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatI2ActionPerformed(evt);
+            }
+        });
 
         seatI3.setBackground(new java.awt.Color(204, 102, 0));
         seatI3.setForeground(new java.awt.Color(255, 255, 255));
+        seatI3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatI3ActionPerformed(evt);
+            }
+        });
 
         seatI4.setBackground(new java.awt.Color(204, 102, 0));
         seatI4.setForeground(new java.awt.Color(255, 255, 255));
+        seatI4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatI4ActionPerformed(evt);
+            }
+        });
 
         seatI5.setBackground(new java.awt.Color(204, 102, 0));
         seatI5.setForeground(new java.awt.Color(255, 255, 255));
+        seatI5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatI5ActionPerformed(evt);
+            }
+        });
 
         seatI6.setBackground(new java.awt.Color(204, 102, 0));
         seatI6.setForeground(new java.awt.Color(255, 255, 255));
+        seatI6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatI6ActionPerformed(evt);
+            }
+        });
 
         seatI7.setBackground(new java.awt.Color(204, 102, 0));
         seatI7.setForeground(new java.awt.Color(255, 255, 255));
+        seatI7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatI7ActionPerformed(evt);
+            }
+        });
 
         seatI8.setBackground(new java.awt.Color(204, 102, 0));
         seatI8.setForeground(new java.awt.Color(255, 255, 255));
+        seatI8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatI8ActionPerformed(evt);
+            }
+        });
 
         seatI9.setBackground(new java.awt.Color(204, 102, 0));
         seatI9.setForeground(new java.awt.Color(255, 255, 255));
+        seatI9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatI9ActionPerformed(evt);
+            }
+        });
 
         seatI10.setBackground(new java.awt.Color(204, 102, 0));
         seatI10.setForeground(new java.awt.Color(255, 255, 255));
+        seatI10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seatI10ActionPerformed(evt);
+            }
+        });
 
         seatingColumn1.setText("1");
         seatingColumn1.setToolTipText("");
@@ -730,8 +1196,7 @@ public class GUI extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(seatH6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(seatI6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                .addGap(15, 15, 15))
+                                            .addComponent(seatI6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                             .addGroup(seatingPanelLayout.createSequentialGroup()
                                 .addGap(7, 7, 7)
                                 .addComponent(seatingSilverSection)
@@ -950,46 +1415,105 @@ public class GUI extends javax.swing.JFrame {
         lblSearchByName.setText("Search By Name");
 
         cmdSearchByName.setText("Search");
+        cmdSearchByName.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmdSearchByNameActionPerformed(evt);
+            }
+        });
 
         txtSearchByName.setToolTipText("Enter name to search here");
 
         lblSearchBySeat.setText("Search By Seat");
 
         cmdSearchBySeat.setText("Search");
+        cmdSearchBySeat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmdSearchBySeatActionPerformed(evt);
+            }
+        });
 
         lblControlPanel.setText("Control Panel");
 
         dSearchResults.setText("Search Results");
 
+        dSeatBooked.setText("Seat Booked :");
+
+        seatBooked.setText("---------");
+
+        dCustomerDetails.setText("Customer Details");
+
+        dSeatDetails.setText("Seat Details");
+
+        dCustomerName.setText("Customer Name :");
+
+        customerName.setText("---------");
+
+        dCustomerPhone.setText("Customer Phone :");
+
+        customerPhone.setText("---------");
+
+        dCustomerEmail.setText("Customer Email :");
+
+        customerEmail.setText("---------");
+
         javax.swing.GroupLayout controlPanelLayout = new javax.swing.GroupLayout(controlPanel);
         controlPanel.setLayout(controlPanelLayout);
         controlPanelLayout.setHorizontalGroup(
             controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jSeparator1)
+            .addGroup(controlPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(controlPanelLayout.createSequentialGroup()
+                        .addGroup(controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, controlPanelLayout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addGroup(controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, controlPanelLayout.createSequentialGroup()
+                                        .addComponent(lblSearchByName)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(txtSearchByName, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(cmdSearchByName, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(cmdSearchBySeat, javax.swing.GroupLayout.Alignment.TRAILING)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, controlPanelLayout.createSequentialGroup()
+                                .addComponent(lblSearchBySeat)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(txtSearchBySeat, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(controlPanelLayout.createSequentialGroup()
+                                .addComponent(dSearchResults)
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addContainerGap())
+                    .addGroup(controlPanelLayout.createSequentialGroup()
+                        .addComponent(dSeatDetails)
+                        .addGap(0, 0, Short.MAX_VALUE))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, controlPanelLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(lblControlPanel)
                 .addGap(91, 91, 91))
             .addGroup(controlPanelLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGroup(controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(dCustomerEmail)
+                    .addGroup(controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(controlPanelLayout.createSequentialGroup()
+                            .addGap(34, 34, 34)
+                            .addComponent(dSeatBooked))
+                        .addGroup(controlPanelLayout.createSequentialGroup()
+                            .addContainerGap()
+                            .addGroup(controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(controlPanelLayout.createSequentialGroup()
+                                    .addGap(10, 10, 10)
+                                    .addComponent(dCustomerName))
+                                .addComponent(dCustomerDetails)))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, controlPanelLayout.createSequentialGroup()
+                            .addContainerGap()
+                            .addComponent(dCustomerPhone))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, controlPanelLayout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, controlPanelLayout.createSequentialGroup()
-                                .addComponent(lblSearchByName)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(txtSearchByName, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(cmdSearchByName, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(cmdSearchBySeat, javax.swing.GroupLayout.Alignment.TRAILING)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, controlPanelLayout.createSequentialGroup()
-                        .addComponent(lblSearchBySeat)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(txtSearchBySeat, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(controlPanelLayout.createSequentialGroup()
-                        .addComponent(dSearchResults)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-            .addComponent(jSeparator1)
+                    .addComponent(customerName)
+                    .addComponent(seatBooked)
+                    .addComponent(customerPhone)
+                    .addComponent(customerEmail))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         controlPanelLayout.setVerticalGroup(
             controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1012,6 +1536,26 @@ public class GUI extends javax.swing.JFrame {
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(dSearchResults)
+                .addGap(22, 22, 22)
+                .addComponent(dSeatDetails)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(dSeatBooked)
+                    .addComponent(seatBooked))
+                .addGap(18, 18, 18)
+                .addComponent(dCustomerDetails)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(dCustomerName)
+                    .addComponent(customerName))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(dCustomerPhone)
+                    .addComponent(customerPhone))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(dCustomerEmail)
+                    .addComponent(customerEmail))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1099,6 +1643,11 @@ public class GUI extends javax.swing.JFrame {
         menuFile.add(fileSeparator);
 
         fileSave.setText("Save");
+        fileSave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fileSaveActionPerformed(evt);
+            }
+        });
         menuFile.add(fileSave);
         menuFile.add(fileSeparator1);
 
@@ -1141,6 +1690,130 @@ public class GUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void displaySoldStatus()
+    {
+        seatsSold.setText(hall.getNumberOfSeatsSold());
+        seatsRemaining.setText(hall.getNumberOfSeatsAvailable());
+    }
+    
+    private void displayPrices()
+    {
+        Event event = hall.getEvent();
+        int[] intPrices = event.getPrices();
+        float[] fltPrices = new float[3];
+        fltPrices[0] = (float)intPrices[0] / 100;
+        fltPrices[1] = (float)intPrices[1] / 100;
+        fltPrices[2] = (float)intPrices[2] / 100;
+        
+        DecimalFormat df = new DecimalFormat("'£'0.00");
+        lblBronzeSeatPrice.setText(df.format(fltPrices[0]));
+        lblSilverSeatPrice.setText(df.format(fltPrices[1]));
+        lblGoldSeatPrice.setText(df.format(fltPrices[2]));
+    }
+    
+    public void setActionCommands()
+    {
+        seatA1.setActionCommand("A1");
+        seatA2.setActionCommand("A2");
+        seatA3.setActionCommand("A3");
+        seatA4.setActionCommand("A4");
+        seatA5.setActionCommand("A5");
+        seatA6.setActionCommand("A6");
+        seatA7.setActionCommand("A7");
+        seatA8.setActionCommand("A8");
+        seatA9.setActionCommand("A9");
+        seatA10.setActionCommand("A10");
+        
+        seatB1.setActionCommand("B1");
+        seatB2.setActionCommand("B2");
+        seatB3.setActionCommand("B3");
+        seatB4.setActionCommand("B4");
+        seatB5.setActionCommand("B5");
+        seatB6.setActionCommand("B6");
+        seatB7.setActionCommand("B7");
+        seatB8.setActionCommand("B8");
+        seatB9.setActionCommand("B9");
+        seatB10.setActionCommand("B10");
+        
+        seatC1.setActionCommand("C1");
+        seatC2.setActionCommand("C2");
+        seatC3.setActionCommand("C3");
+        seatC4.setActionCommand("C4");
+        seatC5.setActionCommand("C5");
+        seatC6.setActionCommand("C6");
+        seatC7.setActionCommand("C7");
+        seatC8.setActionCommand("C8");
+        seatC9.setActionCommand("C9");
+        seatC10.setActionCommand("C10");
+        
+        seatD1.setActionCommand("D1");
+        seatD2.setActionCommand("D2");
+        seatD3.setActionCommand("D3");
+        seatD4.setActionCommand("D4");
+        seatD5.setActionCommand("D5");
+        seatD6.setActionCommand("D6");
+        seatD7.setActionCommand("D7");
+        seatD8.setActionCommand("D8");
+        seatD9.setActionCommand("D9");
+        seatD10.setActionCommand("D10");
+        
+        seatE1.setActionCommand("E1");
+        seatE2.setActionCommand("E2");
+        seatE3.setActionCommand("E3");
+        seatE4.setActionCommand("E4");
+        seatE5.setActionCommand("E5");
+        seatE6.setActionCommand("E6");
+        seatE7.setActionCommand("E7");
+        seatE8.setActionCommand("E8");
+        seatE9.setActionCommand("E9");
+        seatE10.setActionCommand("E10");
+        
+        seatF1.setActionCommand("F1");
+        seatF2.setActionCommand("F2");
+        seatF3.setActionCommand("F3");
+        seatF4.setActionCommand("F4");
+        seatF5.setActionCommand("F5");
+        seatF6.setActionCommand("F6");
+        seatF7.setActionCommand("F7");
+        seatF8.setActionCommand("F8");
+        seatF9.setActionCommand("F9");
+        seatF10.setActionCommand("F10");
+        
+        seatG1.setActionCommand("G1");
+        seatG2.setActionCommand("G2");
+        seatG3.setActionCommand("G3");
+        seatG4.setActionCommand("G4");
+        seatG5.setActionCommand("G5");
+        seatG6.setActionCommand("G6");
+        seatG7.setActionCommand("G7");
+        seatG8.setActionCommand("G8");
+        seatG9.setActionCommand("G9");
+        seatG10.setActionCommand("G10");
+        
+        seatH1.setActionCommand("H1");
+        seatH2.setActionCommand("H2");
+        seatH3.setActionCommand("H3");
+        seatH4.setActionCommand("H4");
+        seatH5.setActionCommand("H5");
+        seatH6.setActionCommand("H6");
+        seatH7.setActionCommand("H7");
+        seatH8.setActionCommand("H8");
+        seatH9.setActionCommand("H9");
+        seatH10.setActionCommand("H10");
+        
+        seatI1.setActionCommand("I1");
+        seatI2.setActionCommand("I2");
+        seatI3.setActionCommand("I3");
+        seatI4.setActionCommand("I4");
+        seatI5.setActionCommand("I5");
+        seatI6.setActionCommand("I6");
+        seatI7.setActionCommand("I7");
+        seatI8.setActionCommand("O8");
+        seatI9.setActionCommand("I9");
+        seatI10.setActionCommand("I10");
+    }
+    
+    
    public void paint(Graphics g) 
    {
         super.paint(g);
@@ -1176,7 +1849,6 @@ public class GUI extends javax.swing.JFrame {
         exitMenu.add(new JLabel("Are you sure you want to exit?"));
         
         int result = JOptionPane.showConfirmDialog(null, exitMenu, "Exit Program?", JOptionPane.OK_CANCEL_OPTION);
-        System.exit(0);
         
         
         if(result == JOptionPane.OK_OPTION)
@@ -1219,14 +1891,36 @@ public class GUI extends javax.swing.JFrame {
             String customerName = txtCustomerName.getText();
             String customerPhone = txtCustomerPhone.getText();
             String customerEmail = txtCustomerEmail.getText();
-
-            //THIS IS IMPORTANT *********************************************************************************
-            //****************************
-            //Customer customer = new Customer(customerName, customerPhone, customerEmail);
+           
+            Customer customer = new Customer(customerName, customerPhone, customerEmail);
+            for(String str : selectedSeats)
+            {
+                char[] rows = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i'};
+                Boolean found = false;
+                int i=0;
+                
+                while(!found && i<9)
+                {
+                    if(rows[i] == str.toLowerCase().charAt(0))
+                    {
+                        found = true;
+                    }
+                    else
+                    {
+                        i++;
+                    }
+                }
+                int j = Integer.valueOf(str.substring(1));
+                hall.bookSeat(i, j, customer);
+                
+            }
+            hall.addSeats(selectedSeats.size());
+            displaySoldStatus();
         }
 
     }//GEN-LAST:event_cmdBookSeatsActionPerformed
 
+    
     private void fileNewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fileNewActionPerformed
         
         //Creating text fields for user input
@@ -1292,10 +1986,1224 @@ public class GUI extends javax.swing.JFrame {
             
             Event event = new Event(concertTitle, concertDate, prices);
             hall.setEvent(event);
+            FileStorage fileStorage = new FileStorage();
+            fileStorage.newEvent(event);
         }
         
     }//GEN-LAST:event_fileNewActionPerformed
 
+    private void fileSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fileSaveActionPerformed
+        FileStorage fileStorage = new FileStorage();
+        fileStorage.saveSeats(hall);
+    }//GEN-LAST:event_fileSaveActionPerformed
+
+    private void cmdSearchByNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdSearchByNameActionPerformed
+        ArrayList<Seat> seats = hall.searchByName(txtSearchByName.getText());
+        //ADD WAY OF DISPLAYING
+    }//GEN-LAST:event_cmdSearchByNameActionPerformed
+
+    private void cmdSearchBySeatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdSearchBySeatActionPerformed
+        Seat seat = hall.searchSeatNumber(txtSearchBySeat.getText());
+        
+        if (seat.getBooked() == true)
+        {
+            seatBooked.setText("Yes");
+            
+            Customer customer = seat.getCustomer();
+            
+            customerName.setText(customer.getName());
+            customerPhone.setText(customer.getPhone());
+            customerEmail.setText(customer.getEmail());
+        }
+        else
+        {
+            seatBooked.setText("No");
+            
+            customerName.show(false);
+            customerPhone.show(false);
+            customerEmail.show(false);
+        }
+        
+        
+        
+        
+    }//GEN-LAST:event_cmdSearchBySeatActionPerformed
+
+
+    
+    private void seatA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatA1ActionPerformed
+        if(selectedSeats.contains("A1"))
+        {
+            selectedSeats.remove("A1");
+            seatA1.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("A1");
+            seatA1.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatA1ActionPerformed
+
+    private void seatA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatA2ActionPerformed
+        if(selectedSeats.contains("A2"))
+        {
+            selectedSeats.remove("A2");
+            seatA2.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("A2");
+            seatA2.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatA2ActionPerformed
+
+    private void seatA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatA3ActionPerformed
+        if(selectedSeats.contains("A3"))
+        {
+            selectedSeats.remove("A3");
+            seatA3.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("A3");
+            seatA3.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatA3ActionPerformed
+
+    private void seatA4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatA4ActionPerformed
+        if(selectedSeats.contains("A4"))
+        {
+            selectedSeats.remove("A4");
+            seatA4.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("A4");
+            seatA4.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatA4ActionPerformed
+
+    private void seatA5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatA5ActionPerformed
+        if(selectedSeats.contains("A5"))
+        {
+            selectedSeats.remove("A5");
+            seatA5.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("A5");
+            seatA5.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatA5ActionPerformed
+
+    private void seatA6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatA6ActionPerformed
+        if(selectedSeats.contains("A6"))
+        {
+            selectedSeats.remove("A6");
+            seatA6.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("A6");
+            seatA6.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatA6ActionPerformed
+
+    private void seatA7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatA7ActionPerformed
+                if(selectedSeats.contains("A7"))
+        {
+            selectedSeats.remove("A7");
+            seatA7.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("A7");
+            seatA7.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatA7ActionPerformed
+
+    private void seatA8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatA8ActionPerformed
+        if(selectedSeats.contains("A8"))
+        {
+            selectedSeats.remove("A8");
+            seatA8.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("A8");
+            seatA8.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatA8ActionPerformed
+
+    private void seatA9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatA9ActionPerformed
+        if(selectedSeats.contains("A9"))
+        {
+            selectedSeats.remove("A9");
+            seatA9.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("A9");
+            seatA9.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatA9ActionPerformed
+
+    private void seatA10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatA10ActionPerformed
+        if(selectedSeats.contains("A10"))
+        {
+            selectedSeats.remove("A10");
+            seatA10.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("A10");
+            seatA10.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatA10ActionPerformed
+
+    private void seatB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatB1ActionPerformed
+        if(selectedSeats.contains("B1"))
+        {
+            selectedSeats.remove("B1");
+            seatB1.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("B1");
+            seatB1.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatB1ActionPerformed
+
+    private void seatB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatB2ActionPerformed
+        if(selectedSeats.contains("B2"))
+        {
+            selectedSeats.remove("B2");
+            seatB2.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("B2");
+            seatB2.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatB2ActionPerformed
+
+    private void seatB3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatB3ActionPerformed
+               if(selectedSeats.contains("B3"))
+        {
+            selectedSeats.remove("B3");
+            seatB3.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("B3");
+            seatB3.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatB3ActionPerformed
+
+    private void seatB4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatB4ActionPerformed
+        if(selectedSeats.contains("B4"))
+        {
+            selectedSeats.remove("B4");
+            seatB4.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("B4");
+            seatB4.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatB4ActionPerformed
+
+    private void seatB5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatB5ActionPerformed
+        if(selectedSeats.contains("B5"))
+        {
+            selectedSeats.remove("B5");
+            seatB5.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("B5");
+            seatB5.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatB5ActionPerformed
+
+    private void seatB6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatB6ActionPerformed
+                if(selectedSeats.contains("B6"))
+        {
+            selectedSeats.remove("B6");
+            seatB6.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("B6");
+            seatB6.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatB6ActionPerformed
+
+    private void seatB7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatB7ActionPerformed
+                if(selectedSeats.contains("B7"))
+        {
+            selectedSeats.remove("B7");
+            seatB7.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("B7");
+            seatB7.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatB7ActionPerformed
+
+    private void seatB8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatB8ActionPerformed
+                if(selectedSeats.contains("B8"))
+        {
+            selectedSeats.remove("B8");
+            seatB8.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("B8");
+            seatB8.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatB8ActionPerformed
+
+    private void seatB9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatB9ActionPerformed
+                if(selectedSeats.contains("B9"))
+        {
+            selectedSeats.remove("B9");
+            seatB9.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("B9");
+            seatB9.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatB9ActionPerformed
+
+    private void seatB10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatB10ActionPerformed
+                if(selectedSeats.contains("B10"))
+        {
+            selectedSeats.remove("B10");
+            seatB10.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("B10");
+            seatB10.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatB10ActionPerformed
+
+    private void seatC1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatC1ActionPerformed
+                if(selectedSeats.contains("C1"))
+        {
+            selectedSeats.remove("C1");
+            seatC1.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("C1");
+            seatC1.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatC1ActionPerformed
+
+    private void seatC2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatC2ActionPerformed
+                        if(selectedSeats.contains("C2"))
+        {
+            selectedSeats.remove("C2");
+            seatC2.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("C2");
+            seatC2.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatC2ActionPerformed
+
+    private void seatC3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatC3ActionPerformed
+                        if(selectedSeats.contains("C3"))
+        {
+            selectedSeats.remove("C3");
+            seatC3.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("C3");
+            seatC3.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatC3ActionPerformed
+
+    private void seatC4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatC4ActionPerformed
+                        if(selectedSeats.contains("C4"))
+        {
+            selectedSeats.remove("C4");
+            seatC4.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("C4");
+            seatC4.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatC4ActionPerformed
+
+    private void seatC5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatC5ActionPerformed
+                        if(selectedSeats.contains("C5"))
+        {
+            selectedSeats.remove("C5");
+            seatC5.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("C5");
+            seatC5.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatC5ActionPerformed
+
+    private void seatC6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatC6ActionPerformed
+                        if(selectedSeats.contains("C6"))
+        {
+            selectedSeats.remove("C6");
+            seatC6.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("C6");
+            seatC6.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatC6ActionPerformed
+
+    private void seatC7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatC7ActionPerformed
+                        if(selectedSeats.contains("C7"))
+        {
+            selectedSeats.remove("C7");
+            seatC7.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("C7");
+            seatC7.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatC7ActionPerformed
+
+    private void seatC8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatC8ActionPerformed
+                        if(selectedSeats.contains("C8"))
+        {
+            selectedSeats.remove("C8");
+            seatC8.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("C8");
+            seatC8.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatC8ActionPerformed
+
+    private void seatC9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatC9ActionPerformed
+                        if(selectedSeats.contains("C9"))
+        {
+            selectedSeats.remove("C9");
+            seatC9.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("C9");
+            seatC9.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatC9ActionPerformed
+
+    private void seatC10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatC10ActionPerformed
+                        if(selectedSeats.contains("C10"))
+        {
+            selectedSeats.remove("C10");
+            seatC10.setBackground(new Color(255,204,0));
+        }
+        else
+        {
+            selectedSeats.add("C10");
+            seatC10.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatC10ActionPerformed
+
+    private void seatD1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatD1ActionPerformed
+        if(selectedSeats.contains("D1"))
+        {
+            selectedSeats.remove("D1");
+            seatD1.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("D1");
+            seatD1.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatD1ActionPerformed
+
+    private void seatD2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatD2ActionPerformed
+        if(selectedSeats.contains("D2"))
+        {
+            selectedSeats.remove("D2");
+            seatD2.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("D2");
+            seatD2.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatD2ActionPerformed
+
+    private void seatD3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatD3ActionPerformed
+        if(selectedSeats.contains("D3"))
+        {
+            selectedSeats.remove("D3");
+            seatD3.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("D3");
+            seatD3.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatD3ActionPerformed
+
+    private void seatD4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatD4ActionPerformed
+        if(selectedSeats.contains("D4"))
+        {
+            selectedSeats.remove("D4");
+            seatD4.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("D4");
+            seatD4.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatD4ActionPerformed
+
+    private void seatD5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatD5ActionPerformed
+        if(selectedSeats.contains("D5"))
+        {
+            selectedSeats.remove("D5");
+            seatD5.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("D5");
+            seatD5.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatD5ActionPerformed
+
+    private void seatD6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatD6ActionPerformed
+        if(selectedSeats.contains("D6"))
+        {
+            selectedSeats.remove("D6");
+            seatD6.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("D6");
+            seatD6.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatD6ActionPerformed
+
+    private void seatD7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatD7ActionPerformed
+        if(selectedSeats.contains("D7"))
+        {
+            selectedSeats.remove("D7");
+            seatD7.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("D7");
+            seatD7.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatD7ActionPerformed
+
+    private void seatD8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatD8ActionPerformed
+        if(selectedSeats.contains("D8"))
+        {
+            selectedSeats.remove("D8");
+            seatD8.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("D8");
+            seatD8.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatD8ActionPerformed
+
+    private void seatD9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatD9ActionPerformed
+        if(selectedSeats.contains("D9"))
+        {
+            selectedSeats.remove("D9");
+            seatD9.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("D9");
+            seatD9.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatD9ActionPerformed
+
+    private void seatD10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatD10ActionPerformed
+        if(selectedSeats.contains("D10"))
+        {
+            selectedSeats.remove("D10");
+            seatD10.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("D10");
+            seatD10.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatD10ActionPerformed
+
+    private void seatE1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatE1ActionPerformed
+        if(selectedSeats.contains("E1"))
+        {
+            selectedSeats.remove("E1");
+            seatE1.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("E1");
+            seatE1.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatE1ActionPerformed
+
+    private void seatE2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatE2ActionPerformed
+        if(selectedSeats.contains("E2"))
+        {
+            selectedSeats.remove("E2");
+            seatE2.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("E2");
+            seatE2.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatE2ActionPerformed
+
+    private void seatE3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatE3ActionPerformed
+        if(selectedSeats.contains("E3"))
+        {
+            selectedSeats.remove("E3");
+            seatE3.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("E3");
+            seatE3.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatE3ActionPerformed
+
+    private void seatE4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatE4ActionPerformed
+        if(selectedSeats.contains("E4"))
+        {
+            selectedSeats.remove("E4");
+            seatE4.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("E4");
+            seatE4.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatE4ActionPerformed
+
+    private void seatE5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatE5ActionPerformed
+        if(selectedSeats.contains("E5"))
+        {
+            selectedSeats.remove("E5");
+            seatE5.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("E5");
+            seatE5.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatE5ActionPerformed
+
+    private void seatE6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatE6ActionPerformed
+        if(selectedSeats.contains("E6"))
+        {
+            selectedSeats.remove("E6");
+            seatE6.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("E6");
+            seatE6.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatE6ActionPerformed
+
+    private void seatE7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatE7ActionPerformed
+        if(selectedSeats.contains("E7"))
+        {
+            selectedSeats.remove("E7");
+            seatE7.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("E7");
+            seatE7.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatE7ActionPerformed
+
+    private void seatE8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatE8ActionPerformed
+        if(selectedSeats.contains("E8"))
+        {
+            selectedSeats.remove("E8");
+            seatE8.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("E8");
+            seatE8.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatE8ActionPerformed
+
+    private void seatE9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatE9ActionPerformed
+        if(selectedSeats.contains("E9"))
+        {
+            selectedSeats.remove("E9");
+            seatE9.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("E9");
+            seatE9.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatE9ActionPerformed
+
+    private void seatE10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatE10ActionPerformed
+        if(selectedSeats.contains("E10"))
+        {
+            selectedSeats.remove("E10");
+            seatE10.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("E10");
+            seatE10.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatE10ActionPerformed
+
+    private void seatF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatF1ActionPerformed
+        if(selectedSeats.contains("F1"))
+        {
+            selectedSeats.remove("F1");
+            seatF1.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("F1");
+            seatF1.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatF1ActionPerformed
+
+    private void seatF2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatF2ActionPerformed
+        if(selectedSeats.contains("F2"))
+        {
+            selectedSeats.remove("F2");
+            seatF2.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("F2");
+            seatF2.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatF2ActionPerformed
+
+    private void seatF3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatF3ActionPerformed
+        if(selectedSeats.contains("F3"))
+        {
+            selectedSeats.remove("F3");
+            seatF3.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("F3");
+            seatF3.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatF3ActionPerformed
+
+    private void seatF4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatF4ActionPerformed
+        if(selectedSeats.contains("F4"))
+        {
+            selectedSeats.remove("F4");
+            seatF4.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("F4");
+            seatF4.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatF4ActionPerformed
+
+    private void seatF5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatF5ActionPerformed
+        if(selectedSeats.contains("F5"))
+        {
+            selectedSeats.remove("F5");
+            seatF5.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("F5");
+            seatF5.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatF5ActionPerformed
+
+    private void seatF6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatF6ActionPerformed
+        if(selectedSeats.contains("F6"))
+        {
+            selectedSeats.remove("F6");
+            seatF6.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("F6");
+            seatF6.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatF6ActionPerformed
+
+    private void seatF7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatF7ActionPerformed
+        if(selectedSeats.contains("F7"))
+        {
+            selectedSeats.remove("F7");
+            seatF7.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("F7");
+            seatF7.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatF7ActionPerformed
+
+    private void seatF8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatF8ActionPerformed
+        if(selectedSeats.contains("F8"))
+        {
+            selectedSeats.remove("F8");
+            seatF8.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("F8");
+            seatF8.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatF8ActionPerformed
+
+    private void seatF9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatF9ActionPerformed
+        if(selectedSeats.contains("F9"))
+        {
+            selectedSeats.remove("F9");
+            seatF9.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("F9");
+            seatF9.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatF9ActionPerformed
+
+    private void seatF10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatF10ActionPerformed
+        if(selectedSeats.contains("F10"))
+        {
+            selectedSeats.remove("F10");
+            seatF10.setBackground(new Color(204,204,204));
+        }
+        else
+        {
+            selectedSeats.add("F10");
+            seatF10.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatF10ActionPerformed
+
+    private void seatG1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatG1ActionPerformed
+        if(selectedSeats.contains("G1"))
+        {
+            selectedSeats.remove("G1");
+            seatG1.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("G1");
+            seatG1.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatG1ActionPerformed
+
+    private void seatG2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatG2ActionPerformed
+        if(selectedSeats.contains("G2"))
+        {
+            selectedSeats.remove("G2");
+            seatG2.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("G2");
+            seatG2.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatG2ActionPerformed
+
+    private void seatG3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatG3ActionPerformed
+        if(selectedSeats.contains("G3"))
+        {
+            selectedSeats.remove("G3");
+            seatG3.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("G3");
+            seatG3.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatG3ActionPerformed
+
+    private void seatG4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatG4ActionPerformed
+        if(selectedSeats.contains("G4"))
+        {
+            selectedSeats.remove("G4");
+            seatG4.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("G4");
+            seatG4.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatG4ActionPerformed
+
+    private void seatG5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatG5ActionPerformed
+        if(selectedSeats.contains("G5"))
+        {
+            selectedSeats.remove("G5");
+            seatG5.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("G5");
+            seatG5.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatG5ActionPerformed
+
+    private void seatG6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatG6ActionPerformed
+        if(selectedSeats.contains("G6"))
+        {
+            selectedSeats.remove("G6");
+            seatG6.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("G6");
+            seatG6.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatG6ActionPerformed
+
+    private void seatG7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatG7ActionPerformed
+        if(selectedSeats.contains("G7"))
+        {
+            selectedSeats.remove("G7");
+            seatG7.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("G7");
+            seatG7.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatG7ActionPerformed
+
+    private void seatG8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatG8ActionPerformed
+        if(selectedSeats.contains("G8"))
+        {
+            selectedSeats.remove("G8");
+            seatG8.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("G8");
+            seatG8.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatG8ActionPerformed
+
+    private void seatG9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatG9ActionPerformed
+        if(selectedSeats.contains("G9"))
+        {
+            selectedSeats.remove("G9");
+            seatG9.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("G9");
+            seatG9.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatG9ActionPerformed
+
+    private void seatG10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatG10ActionPerformed
+        if(selectedSeats.contains("G10"))
+        {
+            selectedSeats.remove("G10");
+            seatG10.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("G10");
+            seatG10.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatG10ActionPerformed
+
+    private void seatH1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatH1ActionPerformed
+        if(selectedSeats.contains("H1"))
+        {
+            selectedSeats.remove("H1");
+            seatH1.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("H1");
+            seatH1.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatH1ActionPerformed
+
+    private void seatH2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatH2ActionPerformed
+        if(selectedSeats.contains("H2"))
+        {
+            selectedSeats.remove("H2");
+            seatH2.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("H2");
+            seatH2.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatH2ActionPerformed
+
+    private void seatH3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatH3ActionPerformed
+        if(selectedSeats.contains("H3"))
+        {
+            selectedSeats.remove("H3");
+            seatH3.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("H3");
+            seatH3.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatH3ActionPerformed
+
+    private void seatH4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatH4ActionPerformed
+        if(selectedSeats.contains("H4"))
+        {
+            selectedSeats.remove("H4");
+            seatH4.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("H4");
+            seatH4.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatH4ActionPerformed
+
+    private void seatH5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatH5ActionPerformed
+        if(selectedSeats.contains("H5"))
+        {
+            selectedSeats.remove("H5");
+            seatH5.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("H5");
+            seatH5.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatH5ActionPerformed
+
+    private void seatH6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatH6ActionPerformed
+        if(selectedSeats.contains("H6"))
+        {
+            selectedSeats.remove("H6");
+            seatH6.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("H6");
+            seatH6.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatH6ActionPerformed
+
+    private void seatH7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatH7ActionPerformed
+        if(selectedSeats.contains("H7"))
+        {
+            selectedSeats.remove("H7");
+            seatH7.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("H7");
+            seatH7.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatH7ActionPerformed
+
+    private void seatH8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatH8ActionPerformed
+        if(selectedSeats.contains("H8"))
+        {
+            selectedSeats.remove("H8");
+            seatH8.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("H8");
+            seatH8.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatH8ActionPerformed
+
+    private void seatH9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatH9ActionPerformed
+        if(selectedSeats.contains("H9"))
+        {
+            selectedSeats.remove("H9");
+            seatH9.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("H9");
+            seatH9.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatH9ActionPerformed
+
+    private void seatH10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatH10ActionPerformed
+        if(selectedSeats.contains("H10"))
+        {
+            selectedSeats.remove("H10");
+            seatH10.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("H10");
+            seatH10.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatH10ActionPerformed
+
+    private void seatI1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatI1ActionPerformed
+        if(selectedSeats.contains("I1"))
+        {
+            selectedSeats.remove("I1");
+            seatI1.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("I1");
+            seatI1.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatI1ActionPerformed
+
+    private void seatI2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatI2ActionPerformed
+        if(selectedSeats.contains("I2"))
+        {
+            selectedSeats.remove("I2");
+            seatI2.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("I2");
+            seatI2.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatI2ActionPerformed
+
+    private void seatI3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatI3ActionPerformed
+        if(selectedSeats.contains("I3"))
+        {
+            selectedSeats.remove("I3");
+            seatI3.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("I3");
+            seatI3.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatI3ActionPerformed
+
+    private void seatI4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatI4ActionPerformed
+        if(selectedSeats.contains("I4"))
+        {
+            selectedSeats.remove("I4");
+            seatI4.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("I4");
+            seatI4.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatI4ActionPerformed
+
+    private void seatI5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatI5ActionPerformed
+        if(selectedSeats.contains("I5"))
+        {
+            selectedSeats.remove("I5");
+            seatI5.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("I5");
+            seatI5.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatI5ActionPerformed
+
+    private void seatI6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatI6ActionPerformed
+        if(selectedSeats.contains("I6"))
+        {
+            selectedSeats.remove("I6");
+            seatI6.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("I6");
+            seatI6.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatI6ActionPerformed
+
+    private void seatI7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatI7ActionPerformed
+        if(selectedSeats.contains("I7"))
+        {
+            selectedSeats.remove("I7");
+            seatI7.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("I7");
+            seatI7.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatI7ActionPerformed
+
+    private void seatI8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatI8ActionPerformed
+        if(selectedSeats.contains("I8"))
+        {
+            selectedSeats.remove("I8");
+            seatI8.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("I8");
+            seatI8.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatI8ActionPerformed
+
+    private void seatI9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatI9ActionPerformed
+        if(selectedSeats.contains("I9"))
+        {
+            selectedSeats.remove("I9");
+            seatI9.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("I9");
+            seatI9.setBackground(Color.blue);
+        }
+    }//GEN-LAST:event_seatI9ActionPerformed
+
+    private void seatI10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatI10ActionPerformed
+        if(selectedSeats.contains("I10"))
+        {
+            selectedSeats.remove("I10");
+            seatI10.setBackground(new Color(204,102,0));
+        }
+        else
+        {
+            selectedSeats.add("I10");
+            seatI10.setBackground(Color.blue);
+        }// TODO add your handling code here:
+    }//GEN-LAST:event_seatI10ActionPerformed
+
+    
+       
+    
     /**
      * @param args the command line arguments
      */
@@ -1305,9 +3213,18 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton cmdSearchByName;
     private javax.swing.JButton cmdSearchBySeat;
     private javax.swing.JPanel controlPanel;
+    private javax.swing.JLabel customerEmail;
+    private javax.swing.JLabel customerName;
+    private javax.swing.JLabel customerPhone;
     private javax.swing.JLabel dBronzeSeatPrice;
+    private javax.swing.JLabel dCustomerDetails;
+    private javax.swing.JLabel dCustomerEmail;
+    private javax.swing.JLabel dCustomerName;
+    private javax.swing.JLabel dCustomerPhone;
     private javax.swing.JLabel dGoldSeatPrice;
     private javax.swing.JLabel dSearchResults;
+    private javax.swing.JLabel dSeatBooked;
+    private javax.swing.JLabel dSeatDetails;
     private javax.swing.JLabel dSeatsRemaining;
     private javax.swing.JLabel dSeatsSold;
     private javax.swing.JLabel dSilverSeatPrice;
@@ -1347,6 +3264,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton seatB7;
     private javax.swing.JButton seatB8;
     private javax.swing.JButton seatB9;
+    private javax.swing.JLabel seatBooked;
     private javax.swing.JButton seatC1;
     private javax.swing.JButton seatC10;
     private javax.swing.JButton seatC2;

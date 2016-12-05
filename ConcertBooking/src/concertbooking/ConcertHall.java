@@ -9,6 +9,7 @@ import java.util.ArrayList;
         private Seat[][] seats;
         private int soldCount;
         private static final int TOTAL_SEATS = 90;
+        //private ArrayList<String> selectedSeatList;
             
         public ConcertHall()
         {
@@ -50,6 +51,11 @@ import java.util.ArrayList;
             }
         }
         
+        public Event getEvent()
+        {
+            return event;
+        }
+        
         public void setEvent(Event newEvent)
         {
             this.event = newEvent;
@@ -87,9 +93,9 @@ import java.util.ArrayList;
         }
         
         //Return the number of Seats Sold
-        public int getNumberOfSeatsSold()
+        public String getNumberOfSeatsSold()
         {
-            return soldCount;
+            return String.valueOf(soldCount);
         }
         
         //Update number of seats sold
@@ -99,11 +105,11 @@ import java.util.ArrayList;
         }   
          
         //Find out how many Seats are Available
-        public int getNumberOfSeatsAvailable()
+        public String getNumberOfSeatsAvailable()
         {
             int availableCount = TOTAL_SEATS - soldCount;
             
-            return availableCount;
+            return String.valueOf(availableCount);
         } 
         
         //Update number of seats sold

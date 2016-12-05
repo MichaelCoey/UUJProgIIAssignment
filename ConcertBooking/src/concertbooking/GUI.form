@@ -26,6 +26,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Save"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fileSaveActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JPopupMenu$Separator" name="fileSeparator1">
             </MenuItem>
@@ -638,6 +641,9 @@
             </Property>
             <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatA1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatA2">
           <Properties>
@@ -648,6 +654,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatA2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatA3">
           <Properties>
@@ -658,6 +667,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatA3ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatA4">
           <Properties>
@@ -668,6 +680,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatA4ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatA5">
           <Properties>
@@ -678,6 +693,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatA5ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatA6">
           <Properties>
@@ -688,6 +706,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatA6ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatA7">
           <Properties>
@@ -698,6 +719,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatA7ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatA8">
           <Properties>
@@ -708,6 +732,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatA8ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatA9">
           <Properties>
@@ -718,6 +745,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatA9ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatA10">
           <Properties>
@@ -728,6 +758,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatA10ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatB1">
           <Properties>
@@ -738,6 +771,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatB1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatB2">
           <Properties>
@@ -748,6 +784,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatB2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatB3">
           <Properties>
@@ -758,6 +797,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatB3ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatB4">
           <Properties>
@@ -768,6 +810,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatB4ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatB5">
           <Properties>
@@ -778,6 +823,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatB5ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatB6">
           <Properties>
@@ -788,6 +836,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatB6ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatB7">
           <Properties>
@@ -798,6 +849,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatB7ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatB8">
           <Properties>
@@ -808,6 +862,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatB8ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatB9">
           <Properties>
@@ -818,6 +875,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatB9ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatB10">
           <Properties>
@@ -828,6 +888,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatB10ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatC1">
           <Properties>
@@ -838,6 +901,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatC1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatC2">
           <Properties>
@@ -848,6 +914,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatC2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatC3">
           <Properties>
@@ -858,6 +927,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatC3ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatC4">
           <Properties>
@@ -868,6 +940,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatC4ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatC5">
           <Properties>
@@ -878,6 +953,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatC5ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatC6">
           <Properties>
@@ -888,6 +966,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatC6ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatC7">
           <Properties>
@@ -898,6 +979,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatC7ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatC8">
           <Properties>
@@ -908,6 +992,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatC8ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatC9">
           <Properties>
@@ -918,6 +1005,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatC9ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatC10">
           <Properties>
@@ -928,6 +1018,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatC10ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatD1">
           <Properties>
@@ -938,6 +1031,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatD1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatD2">
           <Properties>
@@ -948,6 +1044,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatD2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatD3">
           <Properties>
@@ -958,6 +1057,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatD3ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatD4">
           <Properties>
@@ -968,6 +1070,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatD4ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatD5">
           <Properties>
@@ -978,6 +1083,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatD5ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatD6">
           <Properties>
@@ -988,6 +1096,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatD6ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatD7">
           <Properties>
@@ -998,6 +1109,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatD7ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatD8">
           <Properties>
@@ -1008,6 +1122,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatD8ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatD9">
           <Properties>
@@ -1018,6 +1135,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatD9ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatD10">
           <Properties>
@@ -1028,6 +1148,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatD10ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatE1">
           <Properties>
@@ -1038,6 +1161,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatE1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatE2">
           <Properties>
@@ -1048,6 +1174,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatE2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatE3">
           <Properties>
@@ -1058,6 +1187,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatE3ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatE4">
           <Properties>
@@ -1068,6 +1200,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatE4ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatE5">
           <Properties>
@@ -1078,6 +1213,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatE5ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatE6">
           <Properties>
@@ -1088,6 +1226,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatE6ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatE7">
           <Properties>
@@ -1098,6 +1239,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatE7ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatE8">
           <Properties>
@@ -1108,6 +1252,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatE8ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatE9">
           <Properties>
@@ -1118,6 +1265,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatE9ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatE10">
           <Properties>
@@ -1128,6 +1278,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatE10ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatF1">
           <Properties>
@@ -1138,6 +1291,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatF1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatF2">
           <Properties>
@@ -1148,6 +1304,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatF2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatF3">
           <Properties>
@@ -1158,6 +1317,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatF3ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatF4">
           <Properties>
@@ -1168,6 +1330,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatF4ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatF5">
           <Properties>
@@ -1178,6 +1343,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatF5ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatF6">
           <Properties>
@@ -1188,6 +1356,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatF6ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatF7">
           <Properties>
@@ -1198,6 +1369,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatF7ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatF8">
           <Properties>
@@ -1208,6 +1382,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatF8ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatF9">
           <Properties>
@@ -1218,6 +1395,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatF9ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatF10">
           <Properties>
@@ -1228,6 +1408,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatF10ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatG1">
           <Properties>
@@ -1238,6 +1421,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatG1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatG2">
           <Properties>
@@ -1248,6 +1434,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatG2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatG3">
           <Properties>
@@ -1258,6 +1447,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatG3ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatG4">
           <Properties>
@@ -1268,6 +1460,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatG4ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatG5">
           <Properties>
@@ -1278,6 +1473,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatG5ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatG6">
           <Properties>
@@ -1288,6 +1486,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatG6ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatG7">
           <Properties>
@@ -1298,6 +1499,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatG7ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatG8">
           <Properties>
@@ -1308,6 +1512,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatG8ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatG9">
           <Properties>
@@ -1318,6 +1525,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatG9ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatG10">
           <Properties>
@@ -1328,6 +1538,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatG10ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatH1">
           <Properties>
@@ -1338,6 +1551,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatH1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatH2">
           <Properties>
@@ -1348,6 +1564,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatH2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatH3">
           <Properties>
@@ -1358,6 +1577,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatH3ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatH4">
           <Properties>
@@ -1368,6 +1590,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatH4ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatH5">
           <Properties>
@@ -1378,6 +1603,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatH5ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatH6">
           <Properties>
@@ -1388,6 +1616,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatH6ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatH7">
           <Properties>
@@ -1398,6 +1629,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatH7ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatH8">
           <Properties>
@@ -1408,6 +1642,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatH8ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatH9">
           <Properties>
@@ -1418,6 +1655,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatH9ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatH10">
           <Properties>
@@ -1428,6 +1668,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatH10ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatI1">
           <Properties>
@@ -1438,6 +1681,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatI1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatI2">
           <Properties>
@@ -1448,6 +1694,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatI2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatI3">
           <Properties>
@@ -1458,6 +1707,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatI3ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatI4">
           <Properties>
@@ -1468,6 +1720,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatI4ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatI5">
           <Properties>
@@ -1478,6 +1733,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatI5ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatI6">
           <Properties>
@@ -1488,6 +1746,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatI6ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatI7">
           <Properties>
@@ -1498,6 +1759,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatI7ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatI8">
           <Properties>
@@ -1508,6 +1772,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatI8ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatI9">
           <Properties>
@@ -1518,6 +1785,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatI9ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="seatI10">
           <Properties>
@@ -1528,6 +1798,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seatI10ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="seatingColumn1">
           <Properties>
@@ -1664,39 +1937,80 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="jSeparator1" alignment="0" max="32767" attributes="0"/>
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="lblSearchByName" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="txtSearchByName" min="-2" pref="139" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="cmdSearchByName" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cmdSearchBySeat" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="lblSearchBySeat" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="txtSearchBySeat" min="-2" pref="138" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="dSearchResults" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="dSeatDetails" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   <Component id="lblControlPanel" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
               </Group>
-              <Group type="102" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="lblSearchByName" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="txtSearchByName" min="-2" pref="139" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="cmdSearchByName" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="cmdSearchBySeat" alignment="1" min="-2" max="-2" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="dCustomerEmail" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                              <Component id="dSeatBooked" min="-2" max="-2" attributes="0"/>
                           </Group>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <Component id="lblSearchBySeat" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="txtSearchBySeat" min="-2" pref="138" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="dSearchResults" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                                      <Component id="dCustomerName" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="dCustomerDetails" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="dCustomerPhone" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="customerName" min="-2" max="-2" attributes="0"/>
+                      <Component id="seatBooked" min="-2" max="-2" attributes="0"/>
+                      <Component id="customerPhone" min="-2" max="-2" attributes="0"/>
+                      <Component id="customerEmail" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
-              <Component id="jSeparator1" alignment="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
@@ -1722,6 +2036,30 @@
                   <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="dSearchResults" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                  <Component id="dSeatDetails" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="dSeatBooked" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="seatBooked" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="dCustomerDetails" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="dCustomerName" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="customerName" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="dCustomerPhone" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="customerPhone" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="dCustomerEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="customerEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -1737,6 +2075,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Search"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdSearchByNameActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtSearchByName">
           <Properties>
@@ -1754,6 +2095,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Search"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdSearchBySeatActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblControlPanel">
           <Properties>
@@ -1766,6 +2110,56 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JSeparator" name="jSeparator1">
+        </Component>
+        <Component class="javax.swing.JLabel" name="dSeatBooked">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Seat Booked :"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="seatBooked">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="---------"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="dCustomerDetails">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Customer Details"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="dSeatDetails">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Seat Details"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="dCustomerName">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Customer Name :"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="customerName">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="---------"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="dCustomerPhone">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Customer Phone :"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="customerPhone">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="---------"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="dCustomerEmail">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Customer Email :"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="customerEmail">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="---------"/>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>
