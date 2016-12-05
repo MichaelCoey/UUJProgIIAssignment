@@ -17,6 +17,9 @@ public class GUI extends javax.swing.JFrame {
     /**
      * Creates new form GUI
      */
+    
+    private ConcertHall hall = new ConcertHall();
+    
     public GUI() {
         initComponents();
         
@@ -1288,6 +1291,7 @@ public class GUI extends javax.swing.JFrame {
             prices[2] = intBronzePrice;
             
             Event event = new Event(concertTitle, concertDate, prices);
+            hall.setEvent(event);
         }
         
     }//GEN-LAST:event_fileNewActionPerformed

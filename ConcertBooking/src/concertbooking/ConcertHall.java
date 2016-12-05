@@ -5,12 +5,15 @@ import java.util.ArrayList;
     public class ConcertHall {
         
         //Concert Hall Atributes
+        private Event event;
         private Seat[][] seats;
         private int soldCount;
         private static final int TOTAL_SEATS = 90;
             
         public ConcertHall()
         {
+            FileStorage fileStorage = new FileStorage();
+            event = fileStorage.loadSavedEvent();
             seats = new Seat[9][10];
             soldCount = 0;
             assignSeatingTiers();
@@ -45,6 +48,11 @@ import java.util.ArrayList;
                     seats[i][j] = new Bronze();
                 }
             }
+        }
+        
+        public void setEvent(Event newEvent)
+        {
+            this.event = newEvent;
         }
         
         //Returns seat at given position
