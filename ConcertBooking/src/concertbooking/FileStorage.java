@@ -102,11 +102,11 @@ public class FileStorage {
                     {
                         if(((Gold) seat).getBackStagePass())
                         {
-                            line += "1";
+                            line += ",1";
                         }
                         else
                         {
-                            line += "0";
+                            line += ",0";
                         }
                     }
                     
