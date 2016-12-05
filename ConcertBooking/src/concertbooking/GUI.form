@@ -16,6 +16,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="New Concert"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fileNewActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JPopupMenu$Separator" name="fileSeparator">
             </MenuItem>

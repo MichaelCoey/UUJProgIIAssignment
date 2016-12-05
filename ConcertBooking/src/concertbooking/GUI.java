@@ -1087,6 +1087,11 @@ public class GUI extends javax.swing.JFrame {
         menuFile.setText("File");
 
         fileNew.setText("New Concert");
+        fileNew.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fileNewActionPerformed(evt);
+            }
+        });
         menuFile.add(fileNew);
         menuFile.add(fileSeparator);
 
@@ -1218,6 +1223,74 @@ public class GUI extends javax.swing.JFrame {
         }
 
     }//GEN-LAST:event_cmdBookSeatsActionPerformed
+
+    private void fileNewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fileNewActionPerformed
+        
+        //Creating text fields for user input
+        JTextField txtConcertName = new JTextField(20);
+        JTextField txtConcertDate = new JTextField(20);
+        JTextField txtConcertBronzeSeat = new JTextField(20);
+        JTextField txtConcertSilverSeat = new JTextField(20);
+        JTextField txtConcertGoldSeat = new JTextField(20);
+
+        //Adding input and display label for concert name
+        JPanel myPanel = new JPanel();
+        myPanel.add(new JLabel("Concert Name"));
+        myPanel.add(txtConcertName);
+
+        //Adding input and display label for concert date
+        myPanel.add(new JLabel("Concert Date"));
+        myPanel.add(txtConcertDate);
+
+        //Adding input and display label for bronze seat price
+        myPanel.add(new JLabel("Bronze Seat Price"));
+        myPanel.add(txtConcertBronzeSeat);
+        
+        //Adding input and display label for silver seat price
+        myPanel.add(new JLabel("Silver Seat Price"));
+        myPanel.add(txtConcertSilverSeat);
+        
+        //Adding input and display label for gold seat price
+        myPanel.add(new JLabel("Gold Seat Price"));
+        myPanel.add(txtConcertGoldSeat);
+
+        //Setting option pane to display contents below each other
+        myPanel.setLayout(new BoxLayout(myPanel, BoxLayout.Y_AXIS));
+
+        //Setting layout of option pane to be OK/Cancel as well as title
+        int result = JOptionPane.showConfirmDialog(null, myPanel, "Please Enter Concert Details", JOptionPane.OK_CANCEL_OPTION);
+
+        //Setting option pane to save concert details into program
+        if(result == JOptionPane.OK_OPTION)
+        {
+            String concertTitle = txtConcertName.getText();
+            String concertDate = txtConcertDate.getText();
+            String bronzeSeatPrice = txtConcertBronzeSeat.getText();
+            String silverSeatPrice = txtConcertSilverSeat.getText();
+            String goldSeatPrice = txtConcertGoldSeat.getText();
+            
+            
+            
+            bronzeSeatPrice = bronzeSeatPrice.replace(".", "");
+            int intBronzePrice = Integer.valueOf(bronzeSeatPrice);
+            
+            silverSeatPrice = silverSeatPrice.replace(".", "");
+            int intSilverPrice = Integer.valueOf(silverSeatPrice);
+            
+            goldSeatPrice = goldSeatPrice.replace(".", "");
+            int intGoldPrice = Integer.valueOf(goldSeatPrice);
+            
+            
+            int[] prices = new int[3];
+            
+            prices[0] = intGoldPrice;
+            prices[1] = intSilverPrice;
+            prices[2] = intBronzePrice;
+            
+            Event event = new Event(concertTitle, concertDate, prices);
+        }
+        
+    }//GEN-LAST:event_fileNewActionPerformed
 
     /**
      * @param args the command line arguments
