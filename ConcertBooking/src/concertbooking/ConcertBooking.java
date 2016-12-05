@@ -5,10 +5,12 @@ package concertbooking;
  *
  * @author David, George, Michael, Pete 
  */
+
 public class ConcertBooking {
 
     public static void main(String[] args)
     {
+<<<<<<< HEAD
         // TODO code application logic here
         
 //        FileStorage fileStorage = new FileStorage();
@@ -68,9 +70,11 @@ public class ConcertBooking {
             }
         }
         
+=======
+>>>>>>> origin/master
         
+        GUI gui = new GUI();
+        gui.setVisible(true);
         
-    }
-    
-    
+    } 
 }
