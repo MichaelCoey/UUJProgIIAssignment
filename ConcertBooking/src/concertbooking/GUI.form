@@ -41,6 +41,7 @@
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="Concert Hall Booking System"/>
     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
       <Color blue="ff" green="ff" red="ff" type="rgb"/>
     </Property>
@@ -88,8 +89,7 @@
                   <Component id="controlPanel" max="32767" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <Component id="jPanel1" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -312,96 +312,102 @@
                               </Group>
                           </Group>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="seatingBronzeSection" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="seatG10" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="seatG9" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="seatG8" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="seatG7" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="seatG6" min="-2" pref="25" max="-2" attributes="0"/>
+                                  <Component id="seatingBronzeSection" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="seatG10" min="-2" pref="25" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="seatG9" min="-2" pref="25" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="seatG8" min="-2" pref="25" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="seatG7" min="-2" pref="25" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="seatG6" min="-2" pref="25" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="seatI10" min="-2" pref="25" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                                  <Component id="seatI9" min="-2" pref="25" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="seatH10" min="-2" pref="25" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="seatH9" min="-2" pref="25" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="seatH8" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                                              <Component id="seatI8" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="seatH7" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                                              <Component id="seatI7" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="seatH6" min="-2" pref="25" max="-2" attributes="0"/>
+                                              <Component id="seatI6" min="-2" pref="25" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                                  <Component id="seatingSilverSection" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="seatF10" min="-2" pref="25" max="-2" attributes="0"/>
+                                      <Component id="seatE10" min="-2" pref="25" max="-2" attributes="0"/>
+                                      <Component id="seatD10" min="-2" pref="25" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="seatI10" min="-2" pref="25" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="seatI9" min="-2" pref="25" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="seatH10" min="-2" pref="25" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="seatD9" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                                              <Component id="seatE9" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                                          </Group>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="seatH9" min="-2" pref="25" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="seatD8" min="-2" pref="25" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="seatD7" min="-2" pref="25" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="seatD6" min="-2" pref="25" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="seatE8" min="-2" pref="25" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="seatE7" min="-2" pref="25" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="seatE6" min="-2" pref="25" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
                                       </Group>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="seatH8" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
-                                      <Component id="seatI8" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="seatH7" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
-                                      <Component id="seatI7" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="seatH6" min="-2" pref="25" max="-2" attributes="0"/>
-                                      <Component id="seatI6" min="-2" pref="25" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="seatF9" min="-2" pref="25" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="seatF8" min="-2" pref="25" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="seatF7" min="-2" pref="25" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="seatF6" min="-2" pref="25" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
                               </Group>
                           </Group>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                          <Component id="seatingSilverSection" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="seatF10" min="-2" pref="25" max="-2" attributes="0"/>
-                              <Component id="seatE10" min="-2" pref="25" max="-2" attributes="0"/>
-                              <Component id="seatD10" min="-2" pref="25" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="seatD9" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
-                                      <Component id="seatE9" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="seatD8" min="-2" pref="25" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="seatD7" min="-2" pref="25" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="seatD6" min="-2" pref="25" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="seatE8" min="-2" pref="25" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="seatE7" min="-2" pref="25" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="seatE6" min="-2" pref="25" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="seatF9" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="seatF8" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="seatF7" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="seatF6" min="-2" pref="25" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace pref="100" max="32767" attributes="0"/>
@@ -542,34 +548,6 @@
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="seatG10" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
-                              <Component id="seatG9" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
-                              <Component id="seatG8" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
-                              <Component id="seatG7" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
-                              <Component id="seatG6" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                                  <Component id="seatH6" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <Component id="seatH7" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <Component id="seatH8" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <Component id="seatH9" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <Component id="seatH10" min="-2" pref="25" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="seatingBronzeSection" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="seatI10" min="-2" pref="25" max="-2" attributes="0"/>
-                              <Component id="seatI9" min="-2" pref="25" max="-2" attributes="0"/>
-                              <Component id="seatI8" min="-2" pref="25" max="-2" attributes="0"/>
-                              <Component id="seatI7" min="-2" pref="25" max="-2" attributes="0"/>
-                              <Component id="seatI6" min="-2" pref="25" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="seatG1" alignment="0" max="32767" attributes="0"/>
                               <Component id="seatG2" alignment="0" max="32767" attributes="0"/>
@@ -599,6 +577,45 @@
                           <Component id="seatI2" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
                           <Component id="seatI1" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
                           <Component id="seatingRowI" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="seatG10" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="seatG9" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="seatG8" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="seatG7" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="seatG6" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                          <Component id="seatH8" min="-2" pref="25" max="-2" attributes="0"/>
+                                          <Component id="seatH9" min="-2" pref="25" max="-2" attributes="0"/>
+                                          <Component id="seatH10" min="-2" pref="25" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="seatingBronzeSection" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="seatI10" min="-2" pref="25" max="-2" attributes="0"/>
+                                      <Component id="seatI9" min="-2" pref="25" max="-2" attributes="0"/>
+                                      <Component id="seatI8" min="-2" pref="25" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="seatH6" min="-2" pref="25" max="-2" attributes="0"/>
+                                      <Component id="seatH7" min="-2" pref="25" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="seatI7" min="-2" pref="25" max="-2" attributes="0"/>
+                                      <Component id="seatI6" min="-2" pref="25" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
@@ -1650,14 +1667,9 @@
                   <Component id="lblControlPanel" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
               </Group>
-              <Group type="102" alignment="0" attributes="0">
+              <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="1" attributes="0">
-                          <Component id="lblSearchBySeat" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="txtSearchBySeat" min="-2" pref="138" max="-2" attributes="0"/>
-                      </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -1670,9 +1682,19 @@
                               <Component id="cmdSearchBySeat" alignment="1" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="lblSearchBySeat" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="txtSearchBySeat" min="-2" pref="138" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="dSearchResults" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
+              <Component id="jSeparator1" alignment="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
@@ -1694,6 +1716,10 @@
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="cmdSearchBySeat" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                  <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="dSearchResults" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -1732,6 +1758,13 @@
             <Property name="text" type="java.lang.String" value="Control Panel"/>
           </Properties>
         </Component>
+        <Component class="javax.swing.JLabel" name="dSearchResults">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Search Results"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JSeparator" name="jSeparator1">
+        </Component>
       </SubComponents>
     </Container>
     <Container class="javax.swing.JPanel" name="jPanel1">
@@ -1753,16 +1786,43 @@
                   <Component id="dSeatsRemaining" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="seatsRemaining" min="-2" pref="25" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="264" max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="dBronzeSeatPrice" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
+                  <Component id="lblBronzeSeatPrice" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="dSilverSeatPrice" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="lblSilverSeatPrice" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="dGoldSeatPrice" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="lblGoldSeatPrice" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="dSeatsSold" pref="23" max="32767" attributes="0"/>
+              <Component id="dSeatsSold" max="32767" attributes="0"/>
               <Component id="seatsSold" max="32767" attributes="0"/>
               <Component id="dSeatsRemaining" alignment="0" max="32767" attributes="0"/>
               <Component id="seatsRemaining" alignment="1" max="32767" attributes="0"/>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace pref="12" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lblBronzeSeatPrice" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="dBronzeSeatPrice" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblSilverSeatPrice" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="dSilverSeatPrice" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblGoldSeatPrice" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="dGoldSeatPrice" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
           </Group>
         </DimensionLayout>
       </Layout>
@@ -1786,6 +1846,41 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="seatsRemaining">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Seat Pricing"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="dBronzeSeatPrice">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Bronze :"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblBronzeSeatPrice">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="--------"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="dSilverSeatPrice">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Silver :"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblSilverSeatPrice">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="--------"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="dGoldSeatPrice">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Gold :"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblGoldSeatPrice">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="--------"/>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>

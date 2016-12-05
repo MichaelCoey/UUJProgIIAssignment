@@ -153,11 +153,20 @@ public class GUI extends javax.swing.JFrame {
         txtSearchBySeat = new javax.swing.JTextField();
         cmdSearchBySeat = new javax.swing.JButton();
         lblControlPanel = new javax.swing.JLabel();
+        dSearchResults = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
         jPanel1 = new javax.swing.JPanel();
         dSeatsSold = new javax.swing.JLabel();
         seatsSold = new javax.swing.JLabel();
         dSeatsRemaining = new javax.swing.JLabel();
         seatsRemaining = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        dBronzeSeatPrice = new javax.swing.JLabel();
+        lblBronzeSeatPrice = new javax.swing.JLabel();
+        dSilverSeatPrice = new javax.swing.JLabel();
+        lblSilverSeatPrice = new javax.swing.JLabel();
+        dGoldSeatPrice = new javax.swing.JLabel();
+        lblGoldSeatPrice = new javax.swing.JLabel();
         menuBar = new javax.swing.JMenuBar();
         menuFile = new javax.swing.JMenu();
         fileNew = new javax.swing.JMenuItem();
@@ -167,6 +176,7 @@ public class GUI extends javax.swing.JFrame {
         fileExit = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Concert Hall Booking System");
         setBackground(new java.awt.Color(255, 255, 255));
         setName("mainFrame"); // NOI18N
 
@@ -681,77 +691,81 @@ public class GUI extends javax.swing.JFrame {
                                 .addComponent(seatingColumn1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(17, 17, 17))))
                     .addGroup(seatingPanelLayout.createSequentialGroup()
-                        .addComponent(seatingBronzeSection)
-                        .addGap(18, 18, 18)
                         .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(seatingPanelLayout.createSequentialGroup()
-                                .addComponent(seatG10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(seatG9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(seatG8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(seatG7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(seatG6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(seatingPanelLayout.createSequentialGroup()
-                                .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, seatingPanelLayout.createSequentialGroup()
-                                        .addComponent(seatI10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(seatI9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, seatingPanelLayout.createSequentialGroup()
-                                        .addComponent(seatH10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(seatingBronzeSection)
+                                .addGap(18, 18, 18)
+                                .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(seatingPanelLayout.createSequentialGroup()
+                                        .addComponent(seatG10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(seatH9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(seatH8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(seatI8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(seatH7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(seatI7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(seatH6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(seatI6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(seatingPanelLayout.createSequentialGroup()
-                        .addGap(7, 7, 7)
-                        .addComponent(seatingSilverSection)
-                        .addGap(18, 18, 18)
-                        .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(seatF10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(seatE10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(seatD10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(seatG9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(seatG8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(seatG7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(seatG6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(seatingPanelLayout.createSequentialGroup()
+                                        .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, seatingPanelLayout.createSequentialGroup()
+                                                .addComponent(seatI10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(seatI9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, seatingPanelLayout.createSequentialGroup()
+                                                .addComponent(seatH10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(seatH9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(seatH8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(seatI8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(seatH7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(seatI7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(seatH6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(seatI6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(15, 15, 15))
                             .addGroup(seatingPanelLayout.createSequentialGroup()
-                                .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(seatD9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(seatE9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(7, 7, 7)
+                                .addComponent(seatingSilverSection)
+                                .addGap(18, 18, 18)
+                                .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(seatF10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(seatE10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(seatD10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(seatingPanelLayout.createSequentialGroup()
-                                        .addComponent(seatD8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(seatD9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(seatE9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(seatD7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(seatD6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(seatingPanelLayout.createSequentialGroup()
+                                                .addComponent(seatD8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(seatD7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(seatD6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(seatingPanelLayout.createSequentialGroup()
+                                                .addComponent(seatE8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(seatE7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(seatE6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                     .addGroup(seatingPanelLayout.createSequentialGroup()
-                                        .addComponent(seatE8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(seatF9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(seatE7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(seatF8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(seatE6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addGroup(seatingPanelLayout.createSequentialGroup()
-                                .addComponent(seatF9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(seatF8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(seatF7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(seatF6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                        .addComponent(seatF7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(seatF6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap(100, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, seatingPanelLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -869,29 +883,6 @@ public class GUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(seatingPanelLayout.createSequentialGroup()
-                        .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(seatG10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(seatG9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(seatG8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(seatG7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(seatG6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(seatH6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(seatH7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(seatH8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(seatH9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(seatH10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(seatingBronzeSection))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(seatI10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(seatI9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(seatI8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(seatI7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(seatI6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(seatingPanelLayout.createSequentialGroup()
                         .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(seatG1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(seatG2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -916,7 +907,36 @@ public class GUI extends javax.swing.JFrame {
                         .addComponent(seatI3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(seatI2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(seatI1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(seatingRowI, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(seatingRowI, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(seatingPanelLayout.createSequentialGroup()
+                        .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(seatG10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(seatG9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(seatG8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(seatG7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(seatG6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(seatingPanelLayout.createSequentialGroup()
+                                .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(seatH8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(seatH9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(seatH10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(seatingBronzeSection))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(seatI10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(seatI9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(seatI8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(seatingPanelLayout.createSequentialGroup()
+                                .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(seatH6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(seatH7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(seatingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(seatI7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(seatI6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                 .addGap(64, 64, 64)
                 .addComponent(cmdBookSeats)
                 .addContainerGap())
@@ -936,6 +956,8 @@ public class GUI extends javax.swing.JFrame {
 
         lblControlPanel.setText("Control Panel");
 
+        dSearchResults.setText("Search Results");
+
         javax.swing.GroupLayout controlPanelLayout = new javax.swing.GroupLayout(controlPanel);
         controlPanel.setLayout(controlPanelLayout);
         controlPanelLayout.setHorizontalGroup(
@@ -948,10 +970,6 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, controlPanelLayout.createSequentialGroup()
-                        .addComponent(lblSearchBySeat)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(txtSearchBySeat, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, controlPanelLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, controlPanelLayout.createSequentialGroup()
@@ -959,8 +977,16 @@ public class GUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(txtSearchByName, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(cmdSearchByName, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(cmdSearchBySeat, javax.swing.GroupLayout.Alignment.TRAILING))))
+                            .addComponent(cmdSearchBySeat, javax.swing.GroupLayout.Alignment.TRAILING)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, controlPanelLayout.createSequentialGroup()
+                        .addComponent(lblSearchBySeat)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(txtSearchBySeat, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(controlPanelLayout.createSequentialGroup()
+                        .addComponent(dSearchResults)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addComponent(jSeparator1)
         );
         controlPanelLayout.setVerticalGroup(
             controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -979,6 +1005,10 @@ public class GUI extends javax.swing.JFrame {
                     .addComponent(txtSearchBySeat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(cmdSearchBySeat)
+                .addGap(10, 10, 10)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(dSearchResults)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -989,6 +1019,20 @@ public class GUI extends javax.swing.JFrame {
 
         dSeatsRemaining.setBackground(new java.awt.Color(255, 255, 255));
         dSeatsRemaining.setText("Seats Remaining = ");
+
+        jLabel1.setText("Seat Pricing");
+
+        dBronzeSeatPrice.setText("Bronze :");
+
+        lblBronzeSeatPrice.setText("--------");
+
+        dSilverSeatPrice.setText("Silver :");
+
+        lblSilverSeatPrice.setText("--------");
+
+        dGoldSeatPrice.setText("Gold :");
+
+        lblGoldSeatPrice.setText("--------");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -1003,14 +1047,39 @@ public class GUI extends javax.swing.JFrame {
                 .addComponent(dSeatsRemaining)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(seatsRemaining, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(264, 264, 264)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addComponent(dBronzeSeatPrice)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblBronzeSeatPrice)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(dSilverSeatPrice)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblSilverSeatPrice)
+                .addGap(18, 18, 18)
+                .addComponent(dGoldSeatPrice)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblGoldSeatPrice)
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(dSeatsSold, javax.swing.GroupLayout.DEFAULT_SIZE, 23, Short.MAX_VALUE)
+            .addComponent(dSeatsSold, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(seatsSold, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(dSeatsRemaining, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(seatsRemaining, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(12, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblBronzeSeatPrice)
+                    .addComponent(dBronzeSeatPrice)
+                    .addComponent(lblSilverSeatPrice)
+                    .addComponent(dSilverSeatPrice)
+                    .addComponent(lblGoldSeatPrice)
+                    .addComponent(dGoldSeatPrice)
+                    .addComponent(jLabel1))
+                .addContainerGap())
         );
 
         menuBar.setName(""); // NOI18N
@@ -1058,8 +1127,7 @@ public class GUI extends javax.swing.JFrame {
                     .addComponent(seatingPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(controlPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -1092,155 +1160,7 @@ public class GUI extends javax.swing.JFrame {
         g2.drawString("Main Entrance", 275, 490);
    }
     
-    
-   //Code to display price of concert onto the seats 
-   private void setToolTipTextSeats()
-   {
-       //Gold seats
-       seatA1.setToolTipText("");
-       seatA2.setToolTipText("");
-       seatA3.setToolTipText("");
-       seatA4.setToolTipText("");
-       seatA5.setToolTipText("");
-       seatA6.setToolTipText("");
-       seatA7.setToolTipText("");
-       seatA8.setToolTipText("");
-       seatA9.setToolTipText("");
-       seatA10.setToolTipText("");
-       
-       seatB1.setToolTipText("");
-       seatB2.setToolTipText("");
-       seatB3.setToolTipText("");
-       seatB4.setToolTipText("");
-       seatB5.setToolTipText("");
-       seatB6.setToolTipText("");
-       seatB7.setToolTipText("");
-       seatB8.setToolTipText("");
-       seatB9.setToolTipText("");
-       seatB10.setToolTipText("");
-       
-       seatC1.setToolTipText("");
-       seatC2.setToolTipText("");
-       seatC3.setToolTipText("");
-       seatC4.setToolTipText("");
-       seatC5.setToolTipText("");
-       seatC6.setToolTipText("");
-       seatC7.setToolTipText("");
-       seatC8.setToolTipText("");
-       seatC9.setToolTipText("");
-       seatC10.setToolTipText("");
-       
-       //Silver seats
-       seatD1.setToolTipText("");
-       seatD2.setToolTipText("");
-       seatD3.setToolTipText("");
-       seatD4.setToolTipText("");
-       seatD5.setToolTipText("");
-       seatD6.setToolTipText("");
-       seatD7.setToolTipText("");
-       seatD8.setToolTipText("");
-       seatD9.setToolTipText("");
-       seatD10.setToolTipText("");
-       
-       seatE1.setToolTipText("");
-       seatE2.setToolTipText("");
-       seatE3.setToolTipText("");
-       seatE4.setToolTipText("");
-       seatE5.setToolTipText("");
-       seatE6.setToolTipText("");
-       seatE7.setToolTipText("");
-       seatE8.setToolTipText("");
-       seatE9.setToolTipText("");
-       seatE10.setToolTipText("");
-       
-       seatF1.setToolTipText("");
-       seatF2.setToolTipText("");
-       seatF3.setToolTipText("");
-       seatF4.setToolTipText("");
-       seatF5.setToolTipText("");
-       seatF6.setToolTipText("");
-       seatF7.setToolTipText("");
-       seatF8.setToolTipText("");
-       seatF9.setToolTipText("");
-       seatF10.setToolTipText("");
-       
-       //Bronze seats
-       seatG1.setToolTipText("");
-       seatG2.setToolTipText("");
-       seatG3.setToolTipText("");
-       seatG4.setToolTipText("");
-       seatG5.setToolTipText("");
-       seatG6.setToolTipText("");
-       seatG7.setToolTipText("");
-       seatG8.setToolTipText("");
-       seatG9.setToolTipText("");
-       seatG10.setToolTipText("");
-       
-       seatH1.setToolTipText("");
-       seatH2.setToolTipText("");
-       seatH3.setToolTipText("");
-       seatH4.setToolTipText("");
-       seatH5.setToolTipText("");
-       seatH6.setToolTipText("");
-       seatH7.setToolTipText("");
-       seatH8.setToolTipText("");
-       seatH9.setToolTipText("");
-       seatH10.setToolTipText("");
-       
-       seatI1.setToolTipText("");
-       seatI2.setToolTipText("");
-       seatI3.setToolTipText("");
-       seatI4.setToolTipText("");
-       seatI5.setToolTipText("");
-       seatI6.setToolTipText("");
-       seatI7.setToolTipText("");
-       seatI8.setToolTipText("");
-       seatI9.setToolTipText("");
-       seatI10.setToolTipText("");
-   }
    
-   
-   
-    private void cmdBookSeatsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdBookSeatsActionPerformed
-        
-        //Creating text fields for user input
-        JTextField txtCustomerName = new JTextField(20);
-        JTextField txtCustomerPhone = new JTextField(20);
-        JTextField txtCustomerEmail = new JTextField(20);
-        
-        //Adding input and display label for customer name
-        JPanel myPanel = new JPanel();
-        myPanel.add(new JLabel("Customer Name"));
-        myPanel.add(txtCustomerName);
-        
-        //Adding input and display label for customer phone
-        myPanel.add(new JLabel("Customer Phone"));
-        myPanel.add(txtCustomerPhone);
-        
-        //Adding input and display label for customer email
-        myPanel.add(new JLabel("Customer Email"));
-        myPanel.add(txtCustomerEmail); 
-        
-        //Setting option pane to display contents below each other
-        myPanel.setLayout(new BoxLayout(myPanel, BoxLayout.Y_AXIS));
-        
-        //Setting layout of option pane to be OK/Cancel as well as title
-        int result = JOptionPane.showConfirmDialog(null, myPanel, "Please Enter Customer Details", JOptionPane.OK_CANCEL_OPTION);
-        
-        //Setting option pane to save customer/seats into program
-        if(result == JOptionPane.OK_OPTION)
-        {
-            String customerName = txtCustomerName.getText();
-            String customerPhone = txtCustomerPhone.getText();
-            String customerEmail = txtCustomerEmail.getText();
-            
-//THIS IS IMPORTANT *********************************************************************************
-            //****************************
-            //Customer customer = new Customer(customerName, customerPhone, customerEmail); 
-        }
-        
-    }//GEN-LAST:event_cmdBookSeatsActionPerformed
-
     private void fileExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fileExitActionPerformed
         
         //Setting exit pannel to close program
@@ -1259,6 +1179,46 @@ public class GUI extends javax.swing.JFrame {
         
     }//GEN-LAST:event_fileExitActionPerformed
 
+    private void cmdBookSeatsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdBookSeatsActionPerformed
+
+        //Creating text fields for user input
+        JTextField txtCustomerName = new JTextField(20);
+        JTextField txtCustomerPhone = new JTextField(20);
+        JTextField txtCustomerEmail = new JTextField(20);
+
+        //Adding input and display label for customer name
+        JPanel myPanel = new JPanel();
+        myPanel.add(new JLabel("Customer Name"));
+        myPanel.add(txtCustomerName);
+
+        //Adding input and display label for customer phone
+        myPanel.add(new JLabel("Customer Phone"));
+        myPanel.add(txtCustomerPhone);
+
+        //Adding input and display label for customer email
+        myPanel.add(new JLabel("Customer Email"));
+        myPanel.add(txtCustomerEmail);
+
+        //Setting option pane to display contents below each other
+        myPanel.setLayout(new BoxLayout(myPanel, BoxLayout.Y_AXIS));
+
+        //Setting layout of option pane to be OK/Cancel as well as title
+        int result = JOptionPane.showConfirmDialog(null, myPanel, "Please Enter Customer Details", JOptionPane.OK_CANCEL_OPTION);
+
+        //Setting option pane to save customer/seats into program
+        if(result == JOptionPane.OK_OPTION)
+        {
+            String customerName = txtCustomerName.getText();
+            String customerPhone = txtCustomerPhone.getText();
+            String customerEmail = txtCustomerEmail.getText();
+
+            //THIS IS IMPORTANT *********************************************************************************
+            //****************************
+            //Customer customer = new Customer(customerName, customerPhone, customerEmail);
+        }
+
+    }//GEN-LAST:event_cmdBookSeatsActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1268,17 +1228,26 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton cmdSearchByName;
     private javax.swing.JButton cmdSearchBySeat;
     private javax.swing.JPanel controlPanel;
+    private javax.swing.JLabel dBronzeSeatPrice;
+    private javax.swing.JLabel dGoldSeatPrice;
+    private javax.swing.JLabel dSearchResults;
     private javax.swing.JLabel dSeatsRemaining;
     private javax.swing.JLabel dSeatsSold;
+    private javax.swing.JLabel dSilverSeatPrice;
     private javax.swing.JMenuItem fileExit;
     private javax.swing.JMenuItem fileNew;
     private javax.swing.JMenuItem fileSave;
     private javax.swing.JPopupMenu.Separator fileSeparator;
     private javax.swing.JPopupMenu.Separator fileSeparator1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JLabel lblBronzeSeatPrice;
     private javax.swing.JLabel lblControlPanel;
+    private javax.swing.JLabel lblGoldSeatPrice;
     private javax.swing.JLabel lblSearchByName;
     private javax.swing.JLabel lblSearchBySeat;
+    private javax.swing.JLabel lblSilverSeatPrice;
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JMenu menuFile;
     private javax.swing.JButton seatA1;
